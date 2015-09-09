@@ -13,6 +13,7 @@ cls
 color 0f
 set SCRIPT_VERSION=1.0.2
 set SCRIPT_DATE=2015-09-07
+set TARGET_METRO=no
 title BLOATWARE v%SCRIPT_VERSION% (%SCRIPT_DATE%)
 
 :: Get the date into ISO 8601 standard date format (yyyy-mm-dd) so we can use it 
@@ -84,6 +85,28 @@ FOR /F "tokens=*" %%i in (programs_to_target.txt) DO echo. %%i && %WMIC% product
 
 :SKIP
 echo.
+
+:: JOB: Remove default Metro apps (Windows 8/8.1/2012/2012-R2 only).
+:: Read nine characters into the WIN_VER variable (starting at position 0 on the left) to check for Windows 8; 16 characters in to check for Server 2012.
+:: The reason we read partially into the variable instead of comparing the whole thing is because we don't care what sub-version of 8/2012 we're on.
+:: Also I'm lazy and don't want to write ten different comparisons for all the random sub-versions MS churns out with inconsistent names.
+if "%WIN_VER:~0,9%"=="Windows 8" set TARGET_METRO=yes
+if "%WIN_VER:~0,18%"=="Windows Server 201" set TARGET_METRO=yes
+:: Check if we're forcefully skipping Metro de-bloat.
+if /i %TARGET_METRO%==yes (
+	call :log "%CUR_DATE% %TIME%    Windows 8/2012 detected, removing OEM Metro apps..."
+	:: Force allowing us to start AppXSVC service. AppXSVC is the MSI Installer equivalent for "apps" (vs. programs)
+		(
+		net start AppXSVC
+		:: Enable scripts in PowerShell
+		powershell "Set-ExecutionPolicy Unrestricted -force 2>&1 | Out-Null"
+		:: Call PowerShell to run the commands
+		powershell "Get-AppXProvisionedPackage -online | Remove-AppxProvisionedPackage -online 2>&1 | Out-Null"
+		powershell "Get-AppxPackage -AllUsers | Remove-AppxPackage 2>&1 | Out-Null"
+		)
+	:: Running DISM cleanup against unused App binaries..."
+    Dism /Online /Cleanup-Image /StartComponentCleanup
+)
 
 :: Ask Toolbar
 start /wait msiexec /x {4F524A2D-5637-006A-76A7-A758B70C0300} /qn /norestart /passive
