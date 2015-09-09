@@ -1,3 +1,11 @@
+:: Name:		bloatware.bat
+:: Purpose:		Remove all bloatware on new PCs
+:: Author:		George Slight
+:: Revision:	Jan 2015 - initial version
+::				Mar 2015 - Added more bloatware
+::				Aug 2015 - Added more bloatware, and public release.
+
+
 @echo off
 
 cls
