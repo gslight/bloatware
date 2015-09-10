@@ -12,7 +12,7 @@
 cls
 color 0f
 set SCRIPT_VERSION=1.0.2
-set SCRIPT_DATE=2015-09-07
+set SCRIPT_DATE=2015-09-10
 set TARGET_METRO=no
 title BLOATWARE v%SCRIPT_VERSION% (%SCRIPT_DATE%)
 
@@ -31,6 +31,9 @@ echo.
 
 :: PREP JOB: Force WMIC location in case the system PATH is messed up
 set WMIC=%SystemRoot%\system32\wbem\wmic.exe
+
+:: Closes all browsers for correct removal
+taskkill /f /im iexplore.exe /im firefox.exe /im chrome.exe
 
 ::::::::::::::::::::::::::
 :: Interactive Removals ::
