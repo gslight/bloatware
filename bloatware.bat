@@ -5,8 +5,7 @@
 :: Jan 2015 - initial version
 :: Mar 2015 - Added more bloatware
 :: Aug 2015 - Added more bloatware, and public release.
-
-
+:: Aug 2015 - Added more bloatware, windows 8/10 support for removing metro apps
 @echo off
 
 cls
