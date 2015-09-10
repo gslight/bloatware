@@ -57,6 +57,7 @@ start /wait msiexec /x {8C696B4B-6AB1-44BC-9416-96EAC474CABE} /qn /norestart /pa
 "%ProgramFiles(x86)%\PDF Complete\uninstall.exe" 2>NUL
 :: Evernote
 "%ProgramFiles(x86)%\Evernote_TLauncher\uninstall.exe" /S 2>NUL
+start /wait msiexec /x {f761359c-9ced-45ae-9a51-9d6605cd55c4} /qn /norestart /passive
 :: Spotify
 "%ProgramFiles(x86)%\Spotify\Spotify.exe" /uninstall 2>NUL
 :: Toshiba Manuals
@@ -73,8 +74,11 @@ start /wait msiexec /x {8C696B4B-6AB1-44BC-9416-96EAC474CABE} /qn /norestart /pa
 "%ProgramFiles(x86)%\McAfee Security Scan\uninstall.exe" /S 2>NUL
 :: Removes Live Essentials
 start /wait msiexec.exe /x {FE044230-9CA5-43F7-9B58-5AC5A28A1F33} /quiet /norestart
-"c:\program files (x86)\windows live\installer\wlarp.exe" /cleanup:all /q 
-"c:\program files\windows live\installer\wlarp.exe" /cleanup:all /q
+"c:\program files (x86)\windows live\installer\wlarp.exe" /cleanup:all /q 2>NUL
+"c:\program files\windows live\installer\wlarp.exe" /cleanup:all /q 2>NUL
+:: Search Protect by Conduit
+"C:\Program Files\SearchProtect\bin\uninstall.exe" /S 2>NUL
+"C:\Program Files (x86)\SearchProtect\bin\uninstall.exe" /S 2>NUL
 
 :PROMPT
 echo.
@@ -287,9 +291,6 @@ start /wait msiexec /x {51c7ad07-c3f6-4635-8e8a-231306d810fe} /qn /norestart /pa
 start /wait msiexec /x {ed5776d5-59b4-46b7-af81-5f2d94d7c640} /qn /norestart /passive
 :: removes Energy Star
 start /wait msiexec /x {bd1a34c9-4764-4f79-ae1f-112f8c89d3d4} /qn /norestart /passive
-:: removes Evernote
-start /wait msiexec /x {f761359c-9ced-45ae-9a51-9d6605cd55c4} /qn /norestart /passive
-
 :: Random bunch of clutter here, 
 start /wait msiexec /x {23544215-E6E6-448B-B6E9-6268D5B3E74D} /qn /norestart /passive
 start /wait msiexec /x {438363A8-F486-4C37-834C-4955773CB3D3} /qn /norestart /passive
