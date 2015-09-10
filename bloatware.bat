@@ -65,10 +65,16 @@ start /wait msiexec /x {8C696B4B-6AB1-44BC-9416-96EAC474CABE} /qn /norestart /pa
 "%ProgramFiles(x86)%\InstallShield Installation Information\{B65BBB06-1F8E-48F5-8A54-B024A9E15FDF}\Setup.exe" -runfromtemp -removeonly 2>NUL
 "C:\Program Files (x86)\InstallShield Installation Information\{2A87D48D-3FDF-41fd-97CD-A1E370EFFFE2}\Setup.exe" /z-uninstall 2>NUL
 "C:\Program Files (x86)\InstallShield Installation Information\{B46BEA36-0B71-4A4E-AE41-87241643FA0A}\Setup.exe" /z-uninstall 2>NUL
-
+:: Removes Ask Toolbar
+"C:\Program Files\Ask.com\Updater\Updater.exe" -uninstall 2>NUL
+"C:\Program Files (x86)\Ask.com\Updater\Updater.exe" -uninstall 2>NUL
 :: McAfee Security Scan
 "%ProgramFiles%\McAfee Security Scan\uninstall.exe" /S 2>NUL
 "%ProgramFiles(x86)%\McAfee Security Scan\uninstall.exe" /S 2>NUL
+:: Removes Live Essentials
+start /wait msiexec.exe /x {FE044230-9CA5-43F7-9B58-5AC5A28A1F33} /quiet /norestart
+"c:\program files (x86)\windows live\installer\wlarp.exe" /cleanup:all /q 
+"c:\program files\windows live\installer\wlarp.exe" /cleanup:all /q
 
 :PROMPT
 echo.
@@ -223,6 +229,67 @@ start /wait msiexec /x {A05C84FD-989E-4C30-B16A-730233E8237B} /qn /norestart /pa
 start /wait msiexec /x {C60F3836-333A-4AE2-B526-CFDBA143A9BA} /qn /norestart /passive
 :: HP customer experience enhancements
 start /wait msiexec /x {07FA4960-B038-49EB-891B-9F95930AA544} /qn /norestart /passive
+:: Removes PDForge Toolbar V6
+start /wait msiexec /x {96B3C2A3-ADD6-4E63-89D3-1E3AC115D3FA} /qn /norestart /passive
+:: Virtual DJ Toolbar
+start /wait msiexec /x {56444A2D-5637-006A-76A7-A758B70C0A06} /qn /norestart /passive
+:: Removes Ask Toolbar
+start /wait msiexec /x {13F537F0-AF09-11D6-9029-0002B31F9E59} /qn /norestart /passive
+start /wait msiexec /x {2318C2B1-4965-11D4-9B18-009027A5CD4F} /qn /norestart /passive
+start /wait msiexec /x {2E5E800E-6AC0-411E-940A-369530A35E43} /qn /norestart /passive
+start /wait msiexec /x {4E7BD74F-2B8D-469E-C0FB-F778B590AD7D} /qn /norestart /passive
+start /wait msiexec /x {5A263CF7-56A6-4D68-A8CF-345BE45BC911} /qn /norestart /passive
+start /wait msiexec /x {86D4B82A-ABED-442A-BE86-96357B70F4FE} /qn /norestart /passive
+start /wait msiexec /x {AA58ED58-01DD-4D91-8333-CF10577473F7} /qn /norestart /passive
+start /wait msiexec /x {AF69DE43-7D58-4638-B6FA-CE66B5AD205D} /qn /norestart /passive
+start /wait msiexec /x {D4027C7F-154A-4066-A1AD-4243D8127440} /qn /norestart /passive
+start /wait msiexec /x {EF99BD32-C1FB-11D2-892F-0090271D4F88} /qn /norestart /passive
+start /wait msiexec /x {4152532D-4D45-4400-76A7-A758B70C0A06} /qn /norestart /passive
+start /wait msiexec /x {41525333-2D56-3700-76A7-A758B70C0300} /qn /norestart /passive
+start /wait msiexec /x {41525333-0076-A76A-76A7-A758B70C0A02} /qn /norestart /passive
+start /wait msiexec /x {4F524A2D-5637-4300-76A7-A758B70C0A03} /qn /norestart /passive
+start /wait msiexec /x {42435041-2d53-4154-00a7-a758b70b0a00} /qn /norestart /passive
+start /wait msiexec /x {4F524A00-6A76-A76A-76A7-A758B70C1C01} /qn /norestart /passive
+start /wait msiexec /x {4F524A2D-5637-2D53-4154-A758B70C1D00} /qn /norestart /passive
+start /wait msiexec /x {4152532D-5247-006A-76A7-A758B70C0A00} /qn /norestart /passive
+start /wait msiexec /x {41525333-2D56-3700-76A7-A758B70C1D00} /qn /norestart /passive
+start /wait msiexec /x {4F524A2D-5637-006A-76A7-A758B70C0001} /qn /norestart /passive
+start /wait msiexec /x {4F524A2D-5637-006A-76A7-A758B70C1C01} /qn /norestart /passive
+start /wait msiexec /x {4F524A2D-5637-006A-76A7-A758B70C1D00} /qn /norestart /passive
+start /wait msiexec /x {4F524A2D-5637-4300-76A7-A758B70C0700} /qn /norestart /passive
+start /wait msiexec /x {4F524A2D-5637-4300-76A7-A758B70C1500} /qn /norestart /passive
+start /wait msiexec /x {4F524A2D-5637-4300-76A7-A758B70C1C01} /qn /norestart /passive
+start /wait msiexec /x {4F524A2D-5637-4300-76A7-A758B70C1D00} /qn /norestart /passive
+start /wait msiexec /x {57434C32-2D56-3700-76A7-A758B70C1C01} /qn /norestart /passive
+start /wait msiexec /x {57434C32-2D56-3700-76A7-A758B70C1D00} /qn /norestart /passive
+start /wait msiexec /x {86D4B82A-ABED-442A-BE86-96357B70F4FE} /qn /norestart /passive
+:: Bing/Windows Live Bar Removal
+start /wait msiexec /x {C28D96C0-6A90-459E-A077-A6706F4EC0FC} /qn /norestart /passive
+start /wait msiexec /x {786C4AD1-DCBA-49A6-B0EF-B317A344BD66} /qn /norestart /passive
+start /wait msiexec /x {A5C4AD72-25FE-4899-B6DF-6D8DF63C93CF} /qn /norestart /passive
+start /wait msiexec /x {341201D4-4F61-4ADB-987E-9CCE4D83A58D} /qn /norestart /passive
+start /wait msiexec /x {F084395C-40FB-4DB3-981C-B51E74E1E83D} /qn /norestart /passive
+start /wait msiexec /x {D5A145FC-D00C-4F1A-9119-EB4D9D659750} /qn /norestart /passive
+start /wait msiexec /x {1e03db52-d5cb-4338-a338-e526dd4d4db1} /qn /norestart /passive
+:: Removes Live Mesh
+start /wait msiexec /x {DECDCB7C-58CC-4865-91AF-627F9798FE48} /qn /norestart /passive
+:: Removes Live Mail
+start /wait msiexec /x {C66824E4-CBB3-4851-BB3F-E8CFD6350923} /qn /norestart /passive
+:: Removes Live Mesh ActiveX
+start /wait msiexec /x {2902F983-B4C1-44BA-B85D-5C6D52E2C441} /qn /norestart /passive
+:: Removes Live Messager
+start /wait msiexec /x {EB4DF488-AAEF-406F-A341-CB2AAA315B90} /qn /norestart /passive
+:: Removes Cisco EAP Fast Modules
+start /wait msiexec /x {64bf0187-f3d2-498b-99ea-163af9ae6ec9} /qn /norestart /passive 
+:: Removes Cisco LEAP Module
+start /wait msiexec /x {51c7ad07-c3f6-4635-8e8a-231306d810fe} /qn /norestart /passive
+:: Removes Cisco PEAP Module
+start /wait msiexec /x {ed5776d5-59b4-46b7-af81-5f2d94d7c640} /qn /norestart /passive
+:: removes Energy Star
+start /wait msiexec /x {bd1a34c9-4764-4f79-ae1f-112f8c89d3d4} /qn /norestart /passive
+:: removes Evernote
+start /wait msiexec /x {f761359c-9ced-45ae-9a51-9d6605cd55c4} /qn /norestart /passive
+
 :: Random bunch of clutter here, 
 start /wait msiexec /x {23544215-E6E6-448B-B6E9-6268D5B3E74D} /qn /norestart /passive
 start /wait msiexec /x {438363A8-F486-4C37-834C-4955773CB3D3} /qn /norestart /passive
