@@ -359,7 +359,7 @@ start /wait msiexec /x {066CFFF8-12BF-4390-A673-75F95EFF188E} /qn /norestart /pa
 :: Toshiba Wireless LAN Indicator
 start /wait msiexec /x {CDADE9BC-612C-42B8-B929-5C6A823E7FF9} /qn /norestart /passive
 :: Toshiba Bulletin Board
-start /wait msiexec /x {C14518AF-1A0F-4D39-8011-69BAA01CD380}  /qn /norestart /passive
+start /wait msiexec /x {C14518AF-1A0F-4D39-8011-69BAA01CD380} /qn /norestart /passive
 :: ESC Home Page Plugin
 start /wait msiexec /x {E738A392-F690-4A9D-808E-7BAF80E0B398} /qn /norestart /passive
 :: Unsure, was given this to remove something.
