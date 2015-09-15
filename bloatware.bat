@@ -15,6 +15,10 @@ set SCRIPT_DATE=2015-09-10
 set TARGET_METRO=no
 title BLOATWARE v%SCRIPT_VERSION% (%SCRIPT_DATE%)
 
+:: PREP: Detect the version of Windows we're on. This determines a few things later in the script, such as whether or not to attempt removal of Windows 8/8.1 metro apps
+set WIN_VER=undetected
+for /f "tokens=3*" %%i IN ('reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v ProductName ^| Find "ProductName"') DO set WIN_VER=%%i %%j
+
 :: Get the date into ISO 8601 standard date format (yyyy-mm-dd) so we can use it 
 FOR /f %%a in ('WMIC OS GET LocalDateTime ^| find "."') DO set DTS=%%a
 set CUR_DATE=%DTS:~0,4%-%DTS:~4,2%-%DTS:~6,2%
