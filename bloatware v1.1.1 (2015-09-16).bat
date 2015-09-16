@@ -9,6 +9,9 @@
 :: Aug 2015 - Big update, automatic updates to get the latest version of the script.
 @echo off
 
+:: "its fucking beautiful works a treat on HP and Dell" -Manoj
+:: "I just ran this script and now everything has been wiped off of my computer and my bank account is now empty… Thanks George!" -MattD
+
 cls
 color 0f
 set SCRIPT_VERSION=1.1.1
