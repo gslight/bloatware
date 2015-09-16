@@ -1,0 +1,3 @@
+%%%% HASHDEEP-1.0
+%%%% size,sha256,filename
+24966,bb753074cc9080252d75614e6601445aa0ac5cff0f1439484a5a75d79cee4712,C:\Users\george.slight\Github\bloatware\bloatware v1.1.0 (2015-09-16).bat
