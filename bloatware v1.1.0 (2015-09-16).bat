@@ -67,6 +67,9 @@ if /i %SCRIPT_VERSION% LSS %REPO_SCRIPT_VERSION% (
 	color 0f
 )
 
+:: Wget breaks the title, fixing it here.
+title BLOATWARE v%SCRIPT_VERSION% (%SCRIPT_DATE%)
+
 :: PREP: Detect the version of Windows we're on. This determines a few things later in the script, such as whether or not to attempt removal of Windows 8/8.1 metro apps
 set WIN_VER=undetected
 for /f "tokens=3*" %%i IN ('reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v ProductName ^| Find "ProductName"') DO set WIN_VER=%%i %%j
