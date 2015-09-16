@@ -37,7 +37,7 @@ if /i %ERRORLEVEL%==0 (
 SETLOCAL ENABLEDELAYEDEXPANSION
 if /i %SCRIPT_VERSION% LSS %REPO_SCRIPT_VERSION% (
 	set CHOICE=y
-	color 8a
+	color Cf
 	cls
 	echo.
 	echo  ^^! A newer version of bloatware is available on the official repo.
@@ -47,7 +47,7 @@ if /i %SCRIPT_VERSION% LSS %REPO_SCRIPT_VERSION% (
 	echo.
 	set /p CHOICE= Auto-download latest version now? [Y/n]:
 	if !CHOICE!==y (
-		color 8B
+		color Cf
 		cls
 		echo.
 		echo %TIME%   Downloading new version, please wait...
