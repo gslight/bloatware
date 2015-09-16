@@ -6,14 +6,66 @@
 :: Mar 2015 - Added more bloatware
 :: Aug 2015 - Added more bloatware, and public release.
 :: Aug 2015 - Added more bloatware, windows 8/10 support for removing metro apps
+:: Aug 2015 - Big update, automatic updates to get the latest version of the script.
 @echo off
 
 cls
 color 0f
-set SCRIPT_VERSION=1.0.2
-set SCRIPT_DATE=2015-09-10
+set SCRIPT_VERSION=1.1.0
+set SCRIPT_DATE=2015-09-16
 set TARGET_METRO=no
 title BLOATWARE v%SCRIPT_VERSION% (%SCRIPT_DATE%)
+
+set REPO_SCRIPT_DATE=0
+set REPO_SCRIPT_VERSION=0
+
+:: PREP: Update check
+:: Use wget to fetch sha256sums.txt from the repo and parse through it. Extract latest version number and release date from last line (which is always the latest release)
+wget.exe --no-check-certificate https://raw.githubusercontent.com/gslight/bloatware/master/sha256sums.txt -O sha256sums.txt 2>NUL
+:: Assuming there was no error, go ahead and extract version number into REPO_SCRIPT_VERSION, and release date into REPO_SCRIPT_DATE
+if /i %ERRORLEVEL%==0 (
+	for /f "tokens=1,2,3 delims= " %%a in (sha256sums.txt) do set WORKING=%%b
+	for /f "tokens=4 delims=,()" %%a in (sha256sums.txt) do set WORKING2=%%a
+	)
+if /i %ERRORLEVEL%==0 (
+	set REPO_SCRIPT_VERSION=%WORKING:~1,6%
+	set REPO_SCRIPT_DATE=%WORKING2%
+	)
+
+
+:: Notify if an update was found
+SETLOCAL ENABLEDELAYEDEXPANSION
+if /i %SCRIPT_VERSION% LSS %REPO_SCRIPT_VERSION% (
+	set CHOICE=y
+	color 8a
+	cls
+	echo.
+	echo  ^^! A newer version of bloatware is available on the official repo.
+	echo.
+	echo    Your version:   %SCRIPT_VERSION% ^(%SCRIPT_DATE%^)
+	echo    Latest version: %REPO_SCRIPT_VERSION% ^(%REPO_SCRIPT_DATE%^)
+	echo.
+	set /p CHOICE= Auto-download latest version now? [Y/n]:
+	if !CHOICE!==y (
+		color 8B
+		cls
+		echo.
+		echo %TIME%   Downloading new version, please wait...
+		echo.
+		wget.exe --no-check-certificate "https://raw.githubusercontent.com/gslight/bloatware/master/bloatware%%20v%REPO_SCRIPT_VERSION%%%20(%REPO_SCRIPT_DATE%).bat" -O "bloatwaredl v%REPO_SCRIPT_VERSION% (%REPO_SCRIPT_DATE%).bat"
+		:: Wget breaks the title, fixing it here.
+		title BLOATWARE %REPO_SCRIPT_VERSION% ^(%REPO_SCRIPT_DATE%^) now downloaded
+		echo.
+		echo %TIME%   Download finished. 
+		ENDLOCAL DISABLEDELAYEDEXPANSION
+		echo.
+		:: Clean up after ourselves
+		del /f /q sha256sums.txt
+		pause
+		)
+	)
+	color 0f
+)
 
 :: PREP: Detect the version of Windows we're on. This determines a few things later in the script, such as whether or not to attempt removal of Windows 8/8.1 metro apps
 set WIN_VER=undetected
@@ -28,6 +80,7 @@ set CUR_DATE=%DTS:~0,4%-%DTS:~4,2%-%DTS:~6,2%
 :: Get in the correct path (~dp0). This is useful if we start from a network share, it converts CWD to a drive letter
 pushd %~dp0 2>NUL
 
+pause
 echo %CUR_DATE% %TIME%    Launching script...
 echo.
 
