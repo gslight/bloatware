@@ -66,6 +66,7 @@ if /i %SCRIPT_VERSION% LSS %REPO_SCRIPT_VERSION% (
 	)
 	color 0f
 )
+cls
 :: Wget breaks the title, fixing it here.
 title BLOATWARE v%SCRIPT_VERSION% (%SCRIPT_DATE%)
 
@@ -83,7 +84,6 @@ set CUR_DATE=%DTS:~0,4%-%DTS:~4,2%-%DTS:~6,2%
 pushd %~dp0 2>NUL
 
 echo %CUR_DATE% %TIME%    Launching script...
-pause
 echo.
 
 
