@@ -1,4 +1,4 @@
-:: Name:		bloatware.bat
+:: Name:		bloatware v1.1.1 (2015-09-16).bat
 :: Purpose:		Remove all bloatware on new PCs
 :: Author:		George Slight
 :: Revisions:	
@@ -11,7 +11,7 @@
 
 cls
 color 0f
-set SCRIPT_VERSION=1.1.0
+set SCRIPT_VERSION=1.1.1
 set SCRIPT_DATE=2015-09-16
 set TARGET_METRO=no
 title BLOATWARE v%SCRIPT_VERSION% (%SCRIPT_DATE%)
@@ -66,7 +66,6 @@ if /i %SCRIPT_VERSION% LSS %REPO_SCRIPT_VERSION% (
 	)
 	color 0f
 )
-
 :: Wget breaks the title, fixing it here.
 title BLOATWARE v%SCRIPT_VERSION% (%SCRIPT_DATE%)
 
@@ -83,8 +82,8 @@ set CUR_DATE=%DTS:~0,4%-%DTS:~4,2%-%DTS:~6,2%
 :: Get in the correct path (~dp0). This is useful if we start from a network share, it converts CWD to a drive letter
 pushd %~dp0 2>NUL
 
-pause
 echo %CUR_DATE% %TIME%    Launching script...
+pause
 echo.
 
 
