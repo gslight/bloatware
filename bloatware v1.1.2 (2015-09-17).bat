@@ -381,6 +381,14 @@ start /wait msiexec.exe /x {e55e7026-ef2a-4a17-aaa7-db98ea3fd1b1} /qn /norestart
 "C:\Program Files (x86)\WebProtectorPlus\uninstall.exe" 2>NUL
 :: Baidu Antivirus
 "C:\Program Files\Baidu Security\Baidu Antivirus\Uninstall.exe" 2>NUL
+:: Freeze.com NetAssistant
+start /wait msiexec.exe /X{C792A75A-2A1F-4991-9B85-291745478A79} /qn /norestart /passive
+:: Nuance PDF Reader
+start /wait MsiExec.exe /X{5F6C549F-78DA-4E0E-AE70-0BD981936D99} /qn /norestart /passive
+:: InstallQ Updater
+Start /wait MsiExec.exe /X{294A2E0E-3A0B-4D1F-8282-11DEF2040227} /qn /norestart /passive
+:: System Checkup
+"C:\Program Files\iolo\System Checkup\uninstscu.exe" /uninstall 2>NUL
 
 
 :PROMPT
