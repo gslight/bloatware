@@ -101,16 +101,18 @@ set WMIC=%SystemRoot%\system32\wbem\wmic.exe
 taskkill /f /im iexplore.exe /im firefox.exe /im chrome.exe
 
 :: Here we ask if we want to remove Office 2013 Click to run, as this is a bit of a bloatware - Waiting on a copy of the msiexec to start the install
-:: cls
-:: color CF
-:: echo.
-:: echo Would you like to remove Office 2013 Click-to-run (OEM) that normally comes with new PCs, this can take up on average around 1-2GB. However if you wish to install Office 2013 (OEM) on their PC at a later date you will have to redownload it from scratch again and depending on their internet speed this may take a while.
-:: echo
-:: echo.              
-:: SET /P RemoveOffice=([Y]/N)?
-:: IF /I "%RemoveOffice%" NEQ "N" GOTO START
-:: echo.
-
+cls
+color CF
+echo.
+echo Would you like to remove Office 2013 Click-to-run (OEM) that normally comes with new PCs, this can take up on average around 1-2GB. However if you wish to install Office 2013 (OEM) on their PC at a later date you will have to redownload it from scratch again and depending on their internet speed this may take a while.
+echo
+echo.              
+SET /P RemoveOffice=([Y]/N)?
+IF /I "%RemoveOffice%" NEQ "N" GOTO START
+echo.
+:: Office 2013 C2R Suite
+start /wait msiexec /x {90150000-0138-0409-0000-0000000FF1CE} /qn /norestart /passive
+start /wait msiexec /x "C:\ProgramData\Microsoft\OEMOffice15\OOBE\x86\oemoobe.msi" /qn /norestart
 
 ::::::::::::::::::::::::::
 :: Interactive Removals ::
@@ -393,10 +395,6 @@ start /wait MsiExec.exe /X{5F6C549F-78DA-4E0E-AE70-0BD981936D99} /qn /norestart 
 Start /wait MsiExec.exe /X{294A2E0E-3A0B-4D1F-8282-11DEF2040227} /qn /norestart /passive
 :: System Checkup
 "C:\Program Files\iolo\System Checkup\uninstscu.exe" /uninstall 2>NUL
-:: Removing Coupon DLL Files
-IF EXIST "C:\WINDOWS\CouponsBar.dll" regsvr32 /u /s "C:\WINDOWS\CouponsBar.dll" 
-IF EXIST "C:\WINDOWS\CouponsBar.dll" DEL "C:\WINDOWS\CouponsBar.dll" 
-IF EXIST "C:\Windows\cpbrkpie.ocx" DEL "C:\Windows\cpbrkpie.ocx"
 
 :PROMPT
 echo.
@@ -1624,13 +1622,13 @@ start /wait msiexec /x {20A4AA32-B3FF-4A0B-853C-ACDDCD6CB344} /qn /norestart /pa
 start /wait msiexec /x {DC14FF2A-EB53-4093-847D-9314E9555BB6} /qn /norestart /passive
 
 :: Dell Client System Update
-start /wait msiexec /x {69093D49-3DD1-4FB5-A378-0D4DB4CF86EA} /qn /norestart /passive /qn /norestart /passive
-start /wait msiexec /x {04566294-A6B6-4462-9721-031073EB3694} /qn /norestart /passive /qn /norestart /passive
-start /wait msiexec /x {2B2B45B1-3CA0-4F8D-BBB3-AC77ED46A0FE} /qn /norestart /passive /qn /norestart /passive
+start /wait msiexec /x {69093D49-3DD1-4FB5-A378-0D4DB4CF86EA} /qn /norestart /passive
+start /wait msiexec /x {04566294-A6B6-4462-9721-031073EB3694} /qn /norestart /passive
+start /wait msiexec /x {2B2B45B1-3CA0-4F8D-BBB3-AC77ED46A0FE} /qn /norestart /passive
 :: Dell Command | Update
-start /wait msiexec /x {EC542D5D-B608-4145-A8F7-749C02BE6D94} /qn /norestart /passive /qn /norestart /passive
+start /wait msiexec /x {EC542D5D-B608-4145-A8F7-749C02BE6D94} /qn /norestart /passive
 :: Dell Command | Power
-start /wait msiexec /x {DDDAF4A7-8B7D-4088-AECC-6F50E594B4F5} /qn /norestart /passive /qn /norestart /passive
+start /wait msiexec /x {DDDAF4A7-8B7D-4088-AECC-6F50E594B4F5} /qn /norestart /passive
 start /wait msiexec /x {69093D49-3DD1-4FB5-A378-0D4DB4CF86EA} /qn /norestart /passive
 
 :: Dell ControlPoint
@@ -2705,10 +2703,6 @@ start /wait msiexec /x {042A6F10-F770-4886-A502-B795DCF2D3B5} /qn /norestart /pa
 
 :: NVIDIA HD Audio Driver
 start /wait msiexec /x {B2FE1952-0186-46C3-BAEC-A80AA35AC5B8} /qn /norestart /passive
-
-:: Office 2013 C2R Suite
-start /wait msiexec /x {90150000-0138-0409-0000-0000000FF1CE} /qn /norestart /passive
-start /wait msiexec /x "C:\ProgramData\Microsoft\OEMOffice15\OOBE\x86\oemoobe.msi" /qn /norestart
 
 :: opensource
 start /wait msiexec /x {3677D4D8-E5E0-49FC-B86E-06541CF00BBE} /qn /norestart /passive
