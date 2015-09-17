@@ -418,7 +418,7 @@ if "%WIN_VER:~0,9%"=="Windows 8" set TARGET_METRO=yes
 if "%WIN_VER:~0,18%"=="Windows Server 201" set TARGET_METRO=yes
 :: Check if we're forcefully skipping Metro de-bloat.
 if /i %TARGET_METRO%==yes (
-	call :log "%CUR_DATE% %TIME%    Windows 8/2012 detected, removing OEM Metro apps..."
+	echo "%CUR_DATE% %TIME%    Windows 8/2012 detected, removing OEM Metro apps..."
 	:: Force allowing us to start AppXSVC service. AppXSVC is the MSI Installer equivalent for "apps" (vs. programs)
 		(
 		net start AppXSVC
@@ -619,8 +619,8 @@ start /wait msiexec /x {E2CAA395-66B3-4772-85E3-6134DBAB244E} /qn /norestart /pa
 "C:\Program Files (x86)\InstallShield Installation Information\{BC12448A-0B41-4E11-B242-B1129512F5B7}\setup.exe" -l0x9  /remove 2>NUL
 start /wait msiexec /x {BC8233D8-59BA-4D40-92B9-4FDE7452AA8B} /qn /norestart /passive
 start /wait msiexec /x {C2D4CD4A-AE20-40B3-8726-8ED1C03E8C15} /qn /norestart /passive
-"C:\Program Files (x86)\InstallShield Installation Information\{2A87D48D-3FDF-41fd-97CD-A1E370EFFFE2}\Setup.exe" /z-uninstall
-"C:\Program Files (x86)\InstallShield Installation Information\{B46BEA36-0B71-4A4E-AE41-87241643FA0A}\Setup.exe" /z-uninstall
+"C:\Program Files (x86)\InstallShield Installation Information\{2A87D48D-3FDF-41fd-97CD-A1E370EFFFE2}\Setup.exe" /z-uninstall 2>NUL
+"C:\Program Files (x86)\InstallShield Installation Information\{B46BEA36-0B71-4A4E-AE41-87241643FA0A}\Setup.exe" /z-uninstall 2>NUL
 :: Bing Desktop
 start /wait msiexec /x {7D095455-D971-4D4C-9EFD-9AF6A6584F3A} /qn /norestart /passive
 :: Best Buy pc app
