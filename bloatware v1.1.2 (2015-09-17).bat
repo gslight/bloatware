@@ -107,7 +107,7 @@ echo.
 echo Would you like to remove Office 2013 Click-to-run (OEM) that normally comes with new PCs, this can take up on average around 1-2GB. However if you wish to install Office 2013 (OEM) on their PC at a later date you will have to redownload it from scratch again and depending on their internet speed this may take a while.
 echo
 echo.              
-SET /P RemoveOffice=([Y]/N)?
+SET /P RemoveOffice=Uninstall Office 2013 C2R [Y]/n?
 IF /I "%RemoveOffice%" NEQ "N" GOTO START
 echo.
 :: Office 2013 C2R Suite
@@ -225,7 +225,7 @@ RD "C:\Program Files (x86)\Yahoo!\" /S /Q 2>NUL
 "C:\Program Files (x86)\ChatZum Toolbar\tbunsb9EE4.tmp\uninstaller.exe" 2>NUL
 "C:\Program Files\ChatZum Toolbar\tbunsb9EE4.tmp\uninstaller.exe" 2>NUL
 :: Data Toolbar 2.3.2
-start / wait msiexec.exe /x{39238ce4-f7e3-4289-820d-4575907a2cad} /qn /norestart /passive
+start /wait msiexec.exe /x {39238ce4-f7e3-4289-820d-4575907a2cad} /qn /norestart /passive
 :: Facemoods Toolbar
 "C:\Program Files (x86)\facemoods.com\facemoods\1.4.17.11\uninstall.exe" 2>NUL
 "C:\Program Files\facemoods.com\facemoods\1.4.17.11\uninstall.exe" 2>NUL
@@ -235,16 +235,13 @@ start / wait msiexec.exe /x{39238ce4-f7e3-4289-820d-4575907a2cad} /qn /norestart
 :: Games Bar A Toolbar
 "C:\Program Files\Games_Bar_A\uninstall.exe" toolbar 2>NUL
 "C:\Program Files (x86)\Games_Bar_A\uninstall.exe" toolbar 2>NUL
-:: FromDoctoPDF Chrome Toolbar
-"C:\Program Files\FromDocToPDF_65 Chrome Extension\bar\FromDocToPDFCrxSetup.F5979297-4067-4543-81F5-9A037A2C173B.exe /u mindsparktoolbarkey="FromDocToPDF_65 Chrome Extension" 2>NUL
-"C:\Program Files (x86)\FromDocToPDF_65 Chrome Extension\bar\FromDocToPDFCrxSetup.F5979297-4067-4543-81F5-9A037A2C173B.exe /u mindsparktoolbarkey="FromDocToPDF_65 Chrome Extension" 2>NUL
 :: Incredibar Toolbar for IE
 "C:\Program Files\Incredibar.com\incredibar\1.5.11.14\uninstall.exe" 2>NUL
 "C:\Program Files\IncrediMail_MediaBar_2\uninstall.exe" toolbar 2>NUL
 "C:\Program Files (x86)\Incredibar.com\incredibar\1.5.11.14\uninstall.exe" 2>NUL
 "C:\Program Files (x86)\IncrediMail_MediaBar_2\uninstall.exe" toolbar 2>NUL
 :: IE Toolbar 4.6 by Sweetpacks
-start /wait msiexec.exe /x{c3e85ee9-5892-4142-b537-bceb3dac4c3d} /qn /norestart /passive
+start /wait msiexec.exe /x {c3e85ee9-5892-4142-b537-bceb3dac4c3d} /qn /norestart /passive
 :: IsoBuster Toolbar
 "C:\Program Files\IsoBuster\uninstall.exe" toolbar 2>NUL
 "C:\Program Files (x86)\IsoBuster\uninstall.exe" toolbar 2>NUL
@@ -304,9 +301,9 @@ start /wait msiexec.exe /x{c3e85ee9-5892-4142-b537-bceb3dac4c3d} /qn /norestart 
 "C:\Program Files (x86)\xvidly4\uninstall.exe" toolbar 2>NUL
 "C:\Program Files\xvidly4\uninstall.exe" toolbar 2>NUL
 :: YTD Toolbar V7.2
-start /wait msiexec.exe /x{4bbd417f-13b6-4477-b7c2-ae705864058d} /qn /norestart /passive
+start /wait msiexec.exe /x {4bbd417f-13b6-4477-b7c2-ae705864058d} /qn /norestart /passive
 :: YTD Toolbar V7.5
-start /wait msiexec.exe /x{5af054b4-ee0f-4492-90b2-d82ea28e0711} /qn /norestart /passive
+start /wait msiexec.exe /x {5af054b4-ee0f-4492-90b2-d82ea28e0711} /qn /norestart /passive
 :: Zynga Toolbar
 "C:\Program Files (x86)\Zynga\uninstall.exe" 2>NUL
 "C:\Program Files\Zynga\uninstall.exe" 2>NUL
