@@ -1,5 +1,4 @@
-# bloatware
-![alt tag](https://img.shields.io/badge/bloatware-removed-brightgreen.svg?style=flat-square)
+#![alt tag](https://img.shields.io/badge/bloatware-removed-brightgreen.svg?style=flat-square)
 
 I built this crappy looking batch script to remove all the Bloatware from multiple OEMs (Dell/HP/Toshiba) PCs as there’s a lot of manual work to get rid of them all.
 
