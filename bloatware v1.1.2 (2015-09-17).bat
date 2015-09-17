@@ -429,9 +429,9 @@ if /i %TARGET_METRO%==yes (
 		:: Call PowerShell to run the commands
 		powershell "Get-AppXProvisionedPackage -online | Remove-AppxProvisionedPackage -online 2>&1 | Out-Null"
 		powershell "Get-AppxPackage -AllUsers | Remove-AppxPackage 2>&1 | Out-Null"
+		:: Running DISM cleanup against unused App binaries..."
+		Dism /Online /Cleanup-Image /StartComponentCleanup
 		)
-	:: Running DISM cleanup against unused App binaries..."
-    Dism /Online /Cleanup-Image /StartComponentCleanup
 )
 
 :: Absolute Notifier // Absolute Reminder
