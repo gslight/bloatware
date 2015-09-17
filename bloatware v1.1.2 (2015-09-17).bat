@@ -397,11 +397,6 @@ Start /wait MsiExec.exe /X{294A2E0E-3A0B-4D1F-8282-11DEF2040227} /qn /norestart 
 IF EXIST "C:\WINDOWS\CouponsBar.dll" regsvr32 /u /s "C:\WINDOWS\CouponsBar.dll" 
 IF EXIST "C:\WINDOWS\CouponsBar.dll" DEL "C:\WINDOWS\CouponsBar.dll" 
 IF EXIST "C:\Windows\cpbrkpie.ocx" DEL "C:\Windows\cpbrkpie.ocx"
-::MyWebsearch Toolbar
-rundll32 C:\PROGRA~1\MYWEBS~1\bar\2.bin\mwsbar.dll,O 
-
-
-
 
 :PROMPT
 echo.
