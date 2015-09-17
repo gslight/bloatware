@@ -143,6 +143,8 @@ start /wait msiexec /x {f761359c-9ced-45ae-9a51-9d6605cd55c4} /qn /norestart /pa
 :: Removes Ask Toolbar
 "C:\Program Files\Ask.com\Updater\Updater.exe" -uninstall 2>NUL
 "C:\Program Files (x86)\Ask.com\Updater\Updater.exe" -uninstall 2>NUL
+start /wait msiexec /x {4F524A2D-5637-006A-76A7-A758B70C0300} /qn /norestart /passive
+start /wait msiexec /x {86D4B82A-ABED-442A-BE86-96357B70F4FE} /qn /norestart /passive
 :: McAfee Security Scan
 "%ProgramFiles%\McAfee Security Scan\uninstall.exe" /S 2>NUL
 "%ProgramFiles(x86)%\McAfee Security Scan\uninstall.exe" /S 2>NUL
@@ -153,6 +155,233 @@ start /wait msiexec.exe /x {FE044230-9CA5-43F7-9B58-5AC5A28A1F33} /quiet /norest
 :: Search Protect by Conduit
 "C:\Program Files\SearchProtect\bin\uninstall.exe" /S 2>NUL
 "C:\Program Files (x86)\SearchProtect\bin\uninstall.exe" /S 2>NUL
+:: Remove AOL Toolbar
+"C:\Program Files\AOL\AOL Toolbar 4.0\uninstall.exe" 2>NUL
+"C:\Program Files (x86)\AOL\AOL Toolbar 4.0\uninstall.exe" 2>NUL
+"C:\Program Files\AOL\AOL Toolbar 5.0\uninstall.exe" 2>NUL
+"C:\Program Files (x86)\AOL\AOL Toolbar 5.0\uninstall.exe"  2>NUL
+:: Remove Yahoo Toolbar
+"C:\Program Files\Yahoo!\Common\unyt.exe" /S 2>NUL
+RD "C:\Program Files\Yahoo!\" /S /Q 2>NUL
+"C:\Program Files (x86)\Yahoo!\Common\unyt.exe" /S 2>NUL
+RD "C:\Program Files (x86)\Yahoo!\" /S /Q 2>NUL
+:: AVG Toolbars
+"C:\Program Files\AVG SafeGuard toolbar\UNINSTALL.exe" /PROMPT /UNINSTALL 2>NUL
+"C:\Program Files\AVG Secure Search\UNINSTALL.exe" /PROMPT /UNINSTALL 2>NUL
+"C:\Program Files (x86)\AVG SafeGuard toolbar\UNINSTALL.exe" /PROMPT /UNINSTALL 2>NUL
+"C:\Program Files (x86)\AVG Secure Search\UNINSTALL.exe" /PROMPT /UNINSTALL 2>NUL
+:: BT Toolbar
+"C:\Program Files (x86)\bttb\uninstall.exe" 2>NUL
+"C:\Program Files\bttb\uninstall.exe" 2>NUL
+:: Buenosearch Toolbar
+"C:\Program Files (x86)\buenosearch LTD\buenosearch\1.8.28.7\GUninstaller.exe" -uprtc -ask "Bueno Toolbar" -rmbus "buenosearch toolbar" -nontfy -key "buenosearch" 2>NUL
+"C:\Program Files\buenosearch LTD\buenosearch\1.8.28.7\GUninstaller.exe" -uprtc -ask "Bueno Toolbar" -rmbus "buenosearch toolbar" -nontfy -key "buenosearch" 2>NUL
+:: removes Xobi
+"C:\Program Files (x86)\Xobni\UninstallerWizard.exe" -uninstall 2>NUL
+"C:\Program Files\Xobni\UninstallerWizard.exe" -uninstall 2>NUL
+:: Browser Defender
+"C:\ProgramData\BrowserDefender\2.6.1562.221\{c16c1ccb-1111-4e5c-a2f3-533ad2fec8e8}\uninstall.exe" /Uninstall /{15D2D75C-9CB2-4efd-BAD7-B9B4CB4BC693} /su=3a6664ea8d80382b /um 2>NUL
+:: Search Protect by Conduit
+"C:\Program Files\SearchProtect\bin\uninstall.exe" /S 2>NUL
+"C:\Program Files (x86)\SearchProtect\bin\uninstall.exe" /S 2>NUL
+:: SearchFlyBar2 Toolbar
+"C:\Program Files\SearchFlyBar2\uninstall.exe" toolbar 2>NUL
+"C:\Program Files (x86)\SearchFlyBar2\uninstall.exe" toolbar 2>NUL
+:: FLV Runner Toolbar
+"C:\Program Files\FLV_Runner\uninstall.exe" toolbar 2>NUL
+"C:\Program Files (x86)\FLV_Runner\uninstall.exe" toolbar 2>NUL
+"C:\Program Files\FLV_Runner_B2\uninstall.exe" toolbar 2>NUL
+"C:\Program Files (x86)\FLV_Runner_B2\uninstall.exe" toolbar 2>NUL
+"C:\Program Files\Begin-download_FLV_B2\uninstall.exe" toolbar 2>NUL
+"C:\Program Files (x86)\Begin-download_FLV_B2\uninstall.exe" toolbar 2>NUL
+:: xVidly4 Toolbar
+"C:\Program Files\xvidly4\uninstall.exe" toolbar 2>NUL
+"C:\Program Files (x86)\xvidly4\uninstall.exe" toolbar 2>NUL
+:: BitTorrentControl_v12 Toolbar
+"C:\Program Files (x86)\BitTorrentControl_v12\uninstall.exe" toolbar 2>NUL
+"C:\Program Files\BitTorrentControl_v12\uninstall.exe" toolbar 2>NUL
+:: Whittesmoke Toolbar
+"C:\Program Files (x86)\WhiteSmoke_New\uninstall.exe" toolbar 2>NUL
+"C:\Program Files\WhiteSmoke_New\uninstall.exe" toolbar 2>NUL
+:: Easyfundraising Toolbar
+"C:\Program Files (x86)\easyfundraising toolbar\tbunsy24A.tmp\uninstaller.exe" 2>NUL
+"C:\Program Files\easyfundraising toolbar\tbunsy24A.tmp\uninstaller.exe" 2>NUL
+:: Inbox Toolbar
+"C:\Program Files\Inbox Toolbar\unins000.exe" /silent 2>NUL
+"C:\Program Files (x86)\Inbox Toolbar\unins000.exe" /silent 2>NUL
+:: ALOT Toolbar
+"C:\Program Files\alot\alotUninst.exe" 2>NUL
+"C:\Program Files (x86)\alot\alotUninst.exe" 2>NUL
+:: browserTweeks Toolbar
+"C:\Program Files\BrowserTweaks\IEScreenshot\unins000.exe" /silent 2>NUL
+"C:\Program Files (x86)\BrowserTweaks\IEScreenshot\unins000.exe" /silent 2>NUL
+:: Chatzum Toolbar
+"C:\Program Files (x86)\ChatZum Toolbar\tbunsb9EE4.tmp\uninstaller.exe" 2>NUL
+"C:\Program Files\ChatZum Toolbar\tbunsb9EE4.tmp\uninstaller.exe" 2>NUL
+:: Data Toolbar 2.3.2
+start / wait msiexec.exe /x{39238ce4-f7e3-4289-820d-4575907a2cad} /qn /norestart /passive
+:: Facemoods Toolbar
+"C:\Program Files (x86)\facemoods.com\facemoods\1.4.17.11\uninstall.exe" 2>NUL
+"C:\Program Files\facemoods.com\facemoods\1.4.17.11\uninstall.exe" 2>NUL
+:: Free_Game_ Bar_2
+"C:\Program Files\Free_Game_Bar_2\uninstall.exe" 2>NUL
+"C:\Program Files (x86)\Free_Game_Bar_2\uninstall.exe" 2>NUL
+:: Games Bar A Toolbar
+"C:\Program Files\Games_Bar_A\uninstall.exe" toolbar 2>NUL
+"C:\Program Files (x86)\Games_Bar_A\uninstall.exe" toolbar 2>NUL
+:: FromDoctoPDF Chrome Toolbar
+"C:\Program Files\FromDocToPDF_65 Chrome Extension\bar\FromDocToPDFCrxSetup.F5979297-4067-4543-81F5-9A037A2C173B.exe /u mindsparktoolbarkey="FromDocToPDF_65 Chrome Extension" 2>NUL
+"C:\Program Files (x86)\FromDocToPDF_65 Chrome Extension\bar\FromDocToPDFCrxSetup.F5979297-4067-4543-81F5-9A037A2C173B.exe /u mindsparktoolbarkey="FromDocToPDF_65 Chrome Extension" 2>NUL
+:: Incredibar Toolbar for IE
+"C:\Program Files\Incredibar.com\incredibar\1.5.11.14\uninstall.exe" 2>NUL
+"C:\Program Files\IncrediMail_MediaBar_2\uninstall.exe" toolbar 2>NUL
+"C:\Program Files (x86)\Incredibar.com\incredibar\1.5.11.14\uninstall.exe" 2>NUL
+"C:\Program Files (x86)\IncrediMail_MediaBar_2\uninstall.exe" toolbar 2>NUL
+:: IE Toolbar 4.6 by Sweetpacks
+start /wait msiexec.exe /x{c3e85ee9-5892-4142-b537-bceb3dac4c3d} /qn /norestart /passive
+:: IsoBuster Toolbar
+"C:\Program Files\IsoBuster\uninstall.exe" toolbar 2>NUL
+"C:\Program Files (x86)\IsoBuster\uninstall.exe" toolbar 2>NUL
+:: NCH Toolbar
+"C:\Program Files\NCH\uninstall.exe" 2>NUL
+"C:\Program Files (x86)\NCH\uninstall.exe" 2>NUL
+:: Nectar Search Toolbars
+"C:\Program Files\Nectar Search Toolbar\Uninst.exe" 2>NUL
+"C:\Program Files (x86)\Nectar Search Toolbar\Uninst.exe" 2>NUL
+:: Winzip Bar
+"C:\Program Files\WinZipBar\uninstall.exe" 2>NUL
+"C:\Program Files (x86)\WinZipBar\uninstall.exe" 2>NUL
+:: PageRank Toolbar
+"C:\Program Files\PageRage\uninstall.exe" 2>NUL
+"C:\Program Files (X86)\PageRage\uninstall.exe" 2>NUL
+:: Radio TV 2.1 Toolbar
+"C:\Program Files\Radio_TV_2.1\uninstall.exe" 2>NUL
+"C:\Program Files (x86)\Radio_TV_2.1\uninstall.exe" 2>NUL
+:: TV Bar 2 B Toolbar
+"C:\Program Files (x86)\TV_Bar_2_B\uninstall.exe" 2>NUL
+"C:\Program Files\TV_Bar_2_B\uninstall.exe" 2>NUL
+:: Radio Bar 1 Toolbar
+"C:\Program Files\Radio_Bar_1\uninstall.exe" 2>NUL
+"C:\Program Files (x86)\Radio_Bar_1\uninstall.exe" 2>NUL
+:: StartNow Toolbar
+"C:\Program Files (x86)\StartNow Toolbar\StartNowToolbarUninstall.exe" 2>NUL
+"C:\Program Files\StartNow Toolbar\StartNowToolbarUninstall.exe" 2>NUL
+:: Search Results Toolbar
+"C:\Program Files (x86)\searchresults1\uninstall.exe" 2>NUL
+"C:\Program Files\searchresults1\uninstall.exe" 2>NUL
+:: Search-Results Toolbar
+"C:\PROGRA~1\SEARCH~1\Datamngr\SRTOOL~1\uninstall.exe" 2>NUL
+"C:\PROGRA~2\SEARCH~1\Datamngr\SRTOOL~1\uninstall.exe" 2>NUL
+:: SearchQU Toolbar
+"C:\Program Files\Searchqu Toolbar\uninstall.exe" 2>NUL
+"C:\Program Files (x86)\Searchqu Toolbar\uninstall.exe" 2>NUL
+"C:\Program Files (x86)\Windows searchqu Toolbar\uninstall.exe" 2>NUL
+"C:\Program Files\Windows searchqu Toolbar\uninstall.exe" 2>NUL
+:: Stumbleupon Toolbar
+"C:\Program Files (x86)\StumbleUpon\uninstall.exe" 2>NUL
+"C:\Program Files\StumbleUpon\uninstall.exe" 2>NUL
+:: SmilboxEN Toolbar
+"C:\Program Files (x86)\SmileBox_EN\uninstall.exe" 2>NUL
+"C:\Program Files\SmileBox_EN\uninstall.exe" 2>NUL
+:: Utorrent Toolbar
+"C:\Program Files\uTorrentBar\uninstall.exe" 2>NUL
+"C:\Program Files (x86)\uTorrentBar\uninstall.exe" 2>NUL
+:: WiseConvert B Toolbar
+"C:\Program Files\WiseConvert_B\uninstall.exe" toolbar 2>NUL
+"C:\Program Files (x86)\WiseConvert_B\uninstall.exe" toolbar 2>NUL
+:: Wise Convert B2 Toolbat for IE
+"C:\ProgramData\Conduit\IE\CT3297951\UninstallerUI.exe" -ctid=CT3297951 -toolbarName=WiseConvert B2 -toolbarEnv=conduit -type=IE 2>NUL
+:: WiseConvert Toolbar
+"C:\Program Files\WiseConvert\uninstall.exe" 2>NUL
+"C:\Program Files (x86)\WiseConvert\uninstall.exe" 2>NUL
+:: xVidly4 Toolbar
+"C:\Program Files (x86)\xvidly4\uninstall.exe" toolbar 2>NUL
+"C:\Program Files\xvidly4\uninstall.exe" toolbar 2>NUL
+:: YTD Toolbar V7.2
+start /wait msiexec.exe /x{4bbd417f-13b6-4477-b7c2-ae705864058d} /qn /norestart /passive
+:: YTD Toolbar V7.5
+start /wait msiexec.exe /x{5af054b4-ee0f-4492-90b2-d82ea28e0711} /qn /norestart /passive
+:: Zynga Toolbar
+"C:\Program Files (x86)\Zynga\uninstall.exe" 2>NUL
+"C:\Program Files\Zynga\uninstall.exe" 2>NUL
+:: Web Accessibility Toolbar 2011
+"C:\Program Files\WAT_EN\unins000.exe" /silent 2>NUL
+"C:\Program Files (x86)\WAT_EN\unins000.exe" /silent 2>NUL
+:: Web Accessibility Toolbar
+"C:\Program Files\Accessibility_Toolbar\unins000.exe" /silent 2>NUL
+"C:\Program Files (x86)\Accessibility_Toolbar\unins000.exe" /silent 2>NUL
+:: Web Accessibility Toolbar 2013
+"C:\Program Files (x86)\Accessibility_Toolbar\unins000.exe" /silent 2>NUL
+"C:\Program Files\Accessibility_Toolbar\unins000.exe" /silent 2>NUL
+:: Windows iLivid Toolbar
+"C:\Program Files\Windows iLivid Toolbar\uninstall.exe" 2>NUL
+"C:\Program Files (x86)\Windows iLivid Toolbar\uninstall.exe" 2>NUL
+:: Movies Toolbar
+"C:\PROGRA~2\MOVIES~1\Datamngr\SRTOOL~1\GC\uninstall.exe" /UN=CR /PID=^AG6 2>NUL
+"C:\PROGRA~1\MOVIES~1\Datamngr\SRTOOL~1\FF\uninstall.exe" /UN=FF /PID=LVD2-DTX 2>NUL
+"C:\PROGRA~1\MOVIES~1\Datamngr\SRTOOL~1\IE\uninstall.exe" /UN=IE /PID=LVD2-DTX 2>NUL
+:: Babylon Toolbar (IE)
+"C:\Program Files\BabylonToolbar\BabylonToolbar\1.5.3.17\uninstall.exe" 2>NUL
+"C:\Program Files (x86)\BabylonToolbar\BabylonToolbar\1.5.3.17\uninstall.exe" 2>NUL
+:: Babylon Toolbar
+start /wait msiexec.exe /x {e55e7026-ef2a-4a17-aaa7-db98ea3fd1b1} /qn /norestart /passive
+"C:\Program Files\BabylonToolbar\BabylonToolbar\1.8.4.9\GUninstaller.exe" -uprtc -key "BabylonToolbar" 2>NUL
+"C:\Program Files (x86)\BabylonToolbar\BabylonToolbar\1.8.4.9\GUninstaller.exe" -uprtc -key "BabylonToolbar" 2>NUL
+:: Delta Toolbar
+"C:\Program Files\Delta\delta\1.8.21.5\GUninstaller.exe" -uprtc -ask -rmbus 'delta' -key "delta" 2>NUL
+"C:\Program Files\Delta\delta\1.8.24.6\GUninstaller.exe" -uprtc -ask -rmbus "Delta toolbar" -nontfy -bname=dlt -key "delta" 2>NUL
+"C:\Program Files (x86)\Delta\delta\1.8.21.5\GUninstaller.exe" -uprtc -ask -rmbus 'delta' -key "delta" 2>NUL
+"C:\Program Files (x86)\Delta\delta\1.8.24.6\GUninstaller.exe" -uprtc -ask -rmbus "Delta toolbar" -nontfy -bname=dlt -key "delta" 2>NUL
+:: POKKI (Desktop Apps and Game Installer)
+"C:\Windows\system32\config\systemprofile\AppData\Local\Pokki\Uninstall.exe" 2>NUL
+:: FLV Runner Toolbar
+"C:\Program Files\FLV_Runner\uninstall.exe" toolbar 2>NUL
+"C:\Program Files (x86)\FLV_Runner\uninstall.exe" toolbar 2>NUL
+:: Productivity 3.1 B2 Toolbar
+"C:\ProgramData\Conduit\IE\CT3297930\UninstallerUI.exe" -ctid=CT3297930 -toolbarName=Productivity 3.1 B2 -toolbarEnv=conduit -type=IE -origin=AddRemove -userMode=2 2>NUL
+:: Nation Toolbar
+"C:\Program Files\Nation Toolbar\tbunss2A93.tmp\uninstaller.exe" 2>NUL
+"C:\Program Files (x86)\Nation Toolbar\tbunss2A93.tmp\uninstaller.exe" 2>NUL
+:: MyToolbar
+"C:\Program Files\My Toolbar\ATBPToolbar.1.0.Uninstall.exe" 2>NUL
+"C:\Program Files (x86)\My Toolbar\ATBPToolbar.1.0.Uninstall.exe" 2>NUL
+:: Connect DLC Toolbar for IE
+"C:\ProgramData\Conduit\IE\CT3306061\UninstallerUI.exe" -ctid=CT3306061 -toolbarName=Connect DLC 5 -toolbarEnv=conduit -type=IE -origin=AddRemove -userMode=2 2>NUL
+:: BrowserPlus2 Toolbar
+"C:\ProgramData\Conduit\IE\CT3309350\UninstallerUI.exe" -ctid=CT3309350 -toolbarName=BrowserPlus2 -toolbarEnv=conduit -type=IE 2>NUL
+:: Removes Coupon
+"C:\Program Files\Coupons\uninstall.exe" "/U:C:\Program Files\Coupons\Uninstall\uninstall.xml" 2>NUL
+"C:\Program Files (x86)\Coupons\uninstall.exe" "/U:C:\Program Files (x86)\Coupons\Uninstall\uninstall.xml" /S 2>NUL
+"C:\Program Files (x86)\Coupon Printer\uninstall.exe" "/U:C:\Program Files (x86)\Coupon Printer\Uninstall\uninstall.xml" 2>NUL
+"C:\Program Files\Coupon Printer\uninstall.exe" "/U:C:\Program Files\Coupon Printer\Uninstall\uninstall.xml" 2>NUL
+:: Browser Good
+"C:\Program Files (x86)\Browser Good\BrowserGooduninstall.exe" 2>NUL
+:: Removes RegClean Pro
+"C:\Program Files (x86)\RegClean Pro\unins000.exe" /silent 2>NUL
+"C:\Program Files\RegClean Pro\unins000.exe" /silent 2>NUL
+:: Removes Registry Mechanic
+"C:\Program Files\PC Tools Registry Mechanic\unins000.exe" /SILENT 2>NUL
+"C:\Program Files (x86)\PC Tools Registry Mechanic\unins000.exe" /SILENT 2>NUL
+:: Removes Arcade Candy
+"%UserProfile%\Local Settings\Application Data\ArcadeCandy\candyRemove.exe" 2>NUL
+:: Removes PriceGong
+"C:\Program Files\PriceGong\Uninst.exe" 2>NUL
+"C:\Program Files (x86)\PriceGong\Uninst.exe" 2>NUL
+:: Removes Smart Shopper
+"C:\Program Files\ShopperReports3\bin\3.0.491.0\ShopperReportsUninstaller.exe" Web 2>NUL
+"C:\Program Files (x86)\ShopperReports3\bin\3.0.491.0\ShopperReportsUninstaller.exe" Web 2>NUL
+:: Removes Select Rebates
+"C:\Program Files\SelectRebates\SelectRebatesUninstall.exe" 2>NUL
+"C:\Program Files (x86)\SelectRebates\SelectRebatesUninstall.exe" 2>NUL
+:: Candy
+"%UserProfile%\Local Settings\Application Data\ArcadeCandy\candyRemove.exe"  2>NUL
+:: Bubble Sound
+"C:\Program Files\BubbleSound\Uninstall.exe" 2>NUL
+:: Web Protector Plus
+"C:\Program Files (x86)\WebProtectorPlus\uninstall.exe" 2>NUL
+:: Baidu Antivirus
+"C:\Program Files\Baidu Security\Baidu Antivirus\Uninstall.exe" 2>NUL
+
 
 :PROMPT
 echo.
@@ -195,9 +424,6 @@ if /i %TARGET_METRO%==yes (
     Dism /Online /Cleanup-Image /StartComponentCleanup
 )
 
-:: Ask Toolbar
-start /wait msiexec /x {4F524A2D-5637-006A-76A7-A758B70C0300} /qn /norestart /passive
-start /wait msiexec /x {86D4B82A-ABED-442A-BE86-96357B70F4FE} /qn /norestart /passive
 :: Bing Bar
 start /wait msiexec /x {3365E735-48A6-4194-9988-CE59AC5AE503} /qn /norestart /passive
 start /wait msiexec /x {C28D96C0-6A90-459E-A077-A6706F4EC0FC} /qn /norestart /passive
@@ -435,6 +661,10 @@ start /wait msiexec /x {C14518AF-1A0F-4D39-8011-69BAA01CD380} /qn /norestart /pa
 start /wait msiexec /x {E738A392-F690-4A9D-808E-7BAF80E0B398} /qn /norestart /passive
 :: Unsure, was given this to remove something.
 start /wait msiexec /x {173D1DA9-D107-4C85-B1DA-773DB53EEA6F} /qn /norestart /passive 
+:: PDForge Toolbar V6
+start /wait msiexec /x {96B3C2A3-ADD6-4E63-89D3-1E3AC115D3FA} /qn /norestart /passive
+:: Virtual DJ Toolbar
+start /wait msiexec /x {56444A2D-5637-006A-76A7-A758B70C0A06} /qn /norestart /passive
 
 cls
 color CF
