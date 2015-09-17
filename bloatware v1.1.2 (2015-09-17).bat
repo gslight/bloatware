@@ -105,7 +105,6 @@ cls
 color CF
 echo.
 echo Would you like to remove Office 2013 Click-to-run (OEM) that normally comes with new PCs, this can take up on average around 1-2GB. However if you wish to install Office 2013 (OEM) on their PC at a later date you will have to redownload it from scratch again and depending on their internet speed this may take a while.
-echo
 echo.              
 SET /P RemoveOffice=Uninstall Office 2013 C2R [Y]/n?
 IF /I "%RemoveOffice%" NEQ "N" GOTO START
@@ -113,6 +112,7 @@ echo.
 :: Office 2013 C2R Suite
 start /wait msiexec /x {90150000-0138-0409-0000-0000000FF1CE} /qn /norestart /passive
 start /wait msiexec /x "C:\ProgramData\Microsoft\OEMOffice15\OOBE\x86\oemoobe.msi" /qn /norestart
+cls
 
 ::::::::::::::::::::::::::
 :: Interactive Removals ::
