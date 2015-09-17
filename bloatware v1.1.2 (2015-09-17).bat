@@ -65,6 +65,9 @@ if /i %SCRIPT_VERSION% LSS %REPO_SCRIPT_VERSION% (
 		:: Clean up after ourselves
 		del /f /q sha256sums.txt
 		del /f /q "bloatware v%SCRIPT_VERSION% (%SCRIPT_DATE%).bat"
+		echo %TIME%   Please re-run the newest version %REPO_SCRIPT_VERSION% ^(%REPO_SCRIPT_DATE%^)
+		echo.
+		pause
 		exit
 		)
 	)
