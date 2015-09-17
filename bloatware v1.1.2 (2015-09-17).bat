@@ -64,7 +64,8 @@ if /i %SCRIPT_VERSION% LSS %REPO_SCRIPT_VERSION% (
 		echo.
 		:: Clean up after ourselves
 		del /f /q sha256sums.txt
-		pause
+		del /f /q "bloatware v%SCRIPT_VERSION% (%SCRIPT_DATE%).bat"
+		exit
 		)
 	)
 	color 0f
