@@ -67,7 +67,7 @@ if /i %SCRIPT_VERSION% LSS %REPO_SCRIPT_VERSION% (
 		del /f /q "bloatware v%SCRIPT_VERSION% (%SCRIPT_DATE%).bat"
 		echo %TIME%   Please re-run the newest version %REPO_SCRIPT_VERSION% ^(%REPO_SCRIPT_DATE%^)
 		echo.
-		pause
+		pause>NUL
 		exit
 		)
 	)
@@ -3262,6 +3262,13 @@ start /wait msiexec /x {C2D4CD4A-AE20-40B3-8726-8ED1C03E8C15} /qn /norestart /pa
 cls
 color CF
 echo. 
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
 echo                       ___ ___ _  _ ___ ___ _  _ ___ ___  
 echo                      ^| __^|_ _^| \^| ^|_ _/ __^| ^|^| ^| __^|   \ 
 echo                      ^| _^| ^| ^|^| .` ^|^| ^|\__ \ __ ^| _^|^| ^|) ^|
