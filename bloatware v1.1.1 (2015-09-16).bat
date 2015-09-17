@@ -1,4 +1,4 @@
-:: Name:		bloatware v1.1.1 (2015-09-16).bat
+:: Name:		bloatware v1.1.2 (2015-09-16).bat
 :: Purpose:		Remove all bloatware on new PCs
 :: Author:		George Slight
 :: Revisions:	
@@ -14,8 +14,8 @@
 
 cls
 color 0f
-set SCRIPT_VERSION=1.1.1
-set SCRIPT_DATE=2015-09-16
+set SCRIPT_VERSION=1.1.2
+set SCRIPT_DATE=2015-09-17
 set TARGET_METRO=no
 title BLOATWARE v%SCRIPT_VERSION% (%SCRIPT_DATE%)
 
@@ -96,10 +96,23 @@ set WMIC=%SystemRoot%\system32\wbem\wmic.exe
 :: Closes all browsers for correct removal
 taskkill /f /im iexplore.exe /im firefox.exe /im chrome.exe
 
+:: Here we ask if we want to remove Office 2013 Click to run, as this is a bit of a bloatware - Waiting on a copy of the msiexec to start the install
+:: cls
+:: color CF
+:: echo.
+:: echo Would you like to remove Office 2013 Click-to-run (OEM) that normally comes with new PCs, this can take up on average around 1-2GB. However if you wish to install Office 2013 (OEM) on their PC at a later date you will have to redownload it from scratch again and depending on their internet speed this may take a while.
+:: echo
+:: echo.              
+:: SET /P RemoveOffice=([Y]/N)?
+:: IF /I "%RemoveOffice%" NEQ "N" GOTO START
+:: echo.
+
+
 ::::::::::::::::::::::::::
 :: Interactive Removals ::
 ::::::::::::::::::::::::::
-
+:START
+color 0f
 :: McAfee Internet Security
 "%ProgramFiles%\McAfee\MSC\mcuihost.exe" /body:misp://MSCJsRes.dll::uninstall.html /id:uninstall 2>NUL
 :: Dell Backup and Restore
