@@ -493,6 +493,9 @@ start /wait msiexec /x {11A955CD-4398-405A-886D-E464C3618FBF} /qn /norestart /pa
 start /wait msiexec /x {1D181764-DCD0-41B8-AA7B-0A599F027A72} /qn /norestart /passive
 start /wait msiexec /x {7C548501-3501-468A-A443-CC42F5B3626B} /qn /norestart /passive
 
+:: Adobe Widget Browser
+start /wait msiexec /x {EFBE6DD5-B224-96E5-72B9-68D328CB12A6} /qn /norestart /passive
+
 :: Advertising Center 0.0.0.2
 start /wait msiexec /x {3784D297-8089-43B6-B57F-11B7E96413CD} /qn /norestart /passive
 
@@ -549,10 +552,12 @@ start /wait msiexec /x {1D33EC42-4787-56CD-8137-95D8418FFEE8} /qn /norestart /pa
 :: AOLIcon (lol)
 start /wait msiexec /x {FFC7F03B-7069-4F7B-B0A5-9C173E898AC9} /qn /norestart /passive
 
-:: ArcSoft Magic-i Visual Effects 2, ArcSoft WebCam Companion 3 and 4
+:: ArcSoft Magic-i Visual Effects 2 // ArcSoft WebCam Companion 3 and 4 // Family Paint // WebCam Message Board
 start /wait msiexec /x {B1893E3F-9BDF-443F-BED0-1AAA2D9E0D68} /qn /norestart /passive
 start /wait msiexec /x {DE8AAC73-6D8D-483E-96EA-CAEDDADB9079} /qn /norestart /passive
 start /wait msiexec /x {B77DE05C-7C84-4011-B93F-A29D0D2840F4} /qn /norestart /passive
+start /wait msiexec /x {2B2F5B94-F377-41A2-8DA8-899BC538A4E1} /qn /norestart /passive
+start /wait msiexec /x {7D44F1E8-968F-48D8-A966-2890A2CFFC6F} /qn /norestart /passive
 
 :: Ashampoo Burning Studio FREE v.1.14.5
 start /wait msiexec /x {91B33C97-91F8-FFB3-581B-BC952C901685} /qn /norestart /passive
@@ -564,35 +569,6 @@ start /wait msiexec /x {4F524A2D-5637-4300-76A7-A758B70C2201} /qn /norestart /pa
 start /wait msiexec /x {4F524A2D-5637-006A-76A7-A758B70C0F01} /qn /norestart /passive
 start /wait msiexec /x {9149AE79-3421-4A3A-834E-543948B045A2} /qn /norestart /passive
 start /wait msiexec /x {4F524A2D-5637-4300-76A7-A758B70C0A00} /qn /norestart /passive
-start /wait msiexec /x {13F537F0-AF09-11D6-9029-0002B31F9E59} /qn /norestart /passive
-start /wait msiexec /x {2318C2B1-4965-11D4-9B18-009027A5CD4F} /qn /norestart /passive
-start /wait msiexec /x {2E5E800E-6AC0-411E-940A-369530A35E43} /qn /norestart /passive
-start /wait msiexec /x {4E7BD74F-2B8D-469E-C0FB-F778B590AD7D} /qn /norestart /passive
-start /wait msiexec /x {5A263CF7-56A6-4D68-A8CF-345BE45BC911} /qn /norestart /passive
-start /wait msiexec /x {86D4B82A-ABED-442A-BE86-96357B70F4FE} /qn /norestart /passive
-start /wait msiexec /x {AA58ED58-01DD-4D91-8333-CF10577473F7} /qn /norestart /passive
-start /wait msiexec /x {AF69DE43-7D58-4638-B6FA-CE66B5AD205D} /qn /norestart /passive
-start /wait msiexec /x {D4027C7F-154A-4066-A1AD-4243D8127440} /qn /norestart /passive
-start /wait msiexec /x {EF99BD32-C1FB-11D2-892F-0090271D4F88} /qn /norestart /passive
-start /wait msiexec /x {4152532D-4D45-4400-76A7-A758B70C0A06} /qn /norestart /passive
-start /wait msiexec /x {41525333-2D56-3700-76A7-A758B70C0300} /qn /norestart /passive
-start /wait msiexec /x {41525333-0076-A76A-76A7-A758B70C0A02} /qn /norestart /passive
-start /wait msiexec /x {4F524A2D-5637-4300-76A7-A758B70C0A03} /qn /norestart /passive
-start /wait msiexec /x {42435041-2d53-4154-00a7-a758b70b0a00} /qn /norestart /passive
-start /wait msiexec /x {4F524A00-6A76-A76A-76A7-A758B70C1C01} /qn /norestart /passive
-start /wait msiexec /x {4F524A2D-5637-2D53-4154-A758B70C1D00} /qn /norestart /passive
-start /wait msiexec /x {4152532D-5247-006A-76A7-A758B70C0A00} /qn /norestart /passive
-start /wait msiexec /x {41525333-2D56-3700-76A7-A758B70C1D00} /qn /norestart /passive
-start /wait msiexec /x {4F524A2D-5637-006A-76A7-A758B70C0001} /qn /norestart /passive
-start /wait msiexec /x {4F524A2D-5637-006A-76A7-A758B70C1C01} /qn /norestart /passive
-start /wait msiexec /x {4F524A2D-5637-006A-76A7-A758B70C1D00} /qn /norestart /passive
-start /wait msiexec /x {4F524A2D-5637-4300-76A7-A758B70C0700} /qn /norestart /passive
-start /wait msiexec /x {4F524A2D-5637-4300-76A7-A758B70C1500} /qn /norestart /passive
-start /wait msiexec /x {4F524A2D-5637-4300-76A7-A758B70C1C01} /qn /norestart /passive
-start /wait msiexec /x {4F524A2D-5637-4300-76A7-A758B70C1D00} /qn /norestart /passive
-start /wait msiexec /x {57434C32-2D56-3700-76A7-A758B70C1C01} /qn /norestart /passive
-start /wait msiexec /x {57434C32-2D56-3700-76A7-A758B70C1D00} /qn /norestart /passive
-start /wait msiexec /x {86D4B82A-ABED-442A-BE86-96357B70F4FE} /qn /norestart /passive
 
 :: Ask Search App by Ask
 start /wait msiexec /x {43C423D9-E6D6-4607-ADC9-EBB54F690C57} /qn /norestart /passive
@@ -606,6 +582,7 @@ start /wait msiexec /x {E4FB0B39-C991-4EE7-95DD-1A1A7857D33D} /qn /norestart /pa
 start /wait msiexec /x {1F1E283D-23D9-4E09-B967-F46A053FEA89} /qn /norestart /passive
 start /wait msiexec /x {0228288D-975E-42F7-9993-E91A82E6BBD9} /qn /norestart /passive
 start /wait msiexec /x {6F5E2F4A-377D-4700-B0E3-8F7F7507EA15} /qn /norestart /passive
+start /wait msiexec /x {B618B8E1-FB71-4237-8361-C3EA3EF15EF7} /qn /norestart /passive
 
 :: ASUS Ai Charger
 start /wait msiexec /x {7FB64E72-9B0E-4460-A821-040C341E414A} /qn /norestart /passive
@@ -630,6 +607,9 @@ start /wait msiexec /x {966F007B-0D8A-44A6-A6C3-5395983C356D} /qn /norestart /pa
 start /wait msiexec /x {0B7BE3CA-AF33-4CE3-BC27-1456C96EF996} /qn /norestart /passive
 start /wait msiexec /x {7A5DB14B-14B0-4F09-A130-BF60503B4248} /qn /norestart /passive
 
+:: Avira Launcher
+start /wait msiexec /x {EA226E08-91E7-4F05-B61E-3EDBBBEB15BB} /qn /norestart /passive
+
 :: AzureBay Screen Saver
 start /wait msiexec /x {958A793F-F1D2-4A90-B6A5-C52E2D74E8FE} /qn /norestart /passive
 
@@ -649,6 +629,7 @@ start /wait msiexec /x {3611CA6C-5FCA-4900-A329-6A118123CCFC} /qn /norestart /pa
 start /wait msiexec /x {61EDBE71-5D3E-4AB7-AD95-E53FEAF68C17} /qn /norestart /passive
 start /wait msiexec /x {6ACE7F46-FACE-4125-AE86-672F4F2A6A28} /qn /norestart /passive
 start /wait msiexec /x {B4089055-D468-45A4-A6BA-5A138DD715FC} /qn /norestart /passive
+start /wait msiexec /x {A7E8CB11-B09E-46F8-9BAE-B2E01EBF7E51} /qn /norestart /passive
 
 :: Bing Desktop
 start /wait msiexec /x {7D095455-D971-4D4C-9EFD-9AF6A6584F3A} /qn /norestart /passive
@@ -758,8 +739,30 @@ start /wait msiexec /x {AD4F337C-7752-415A-9602-DF17B4F46E68} /qn /norestart /pa
 start /wait msiexec /x {C7FDA25B-9A0F-487B-9502-35ABBF701599} /qn /norestart /passive
 start /wait msiexec /x {BCBE985F-DE7D-41EA-A8AB-A575AEEDBDBD} /qn /norestart /passive
 start /wait msiexec /x {823FCD0D-756D-44BE-A546-1D4D9FBBEA8C} /qn /norestart /passive
+start /wait msiexec /x {990B884F-569C-5078-DD76-8BE91A569291} /qn /norestart /passive
+start /wait msiexec /x {7D263751-40FB-D719-9F42-B62B67553D6F} /qn /norestart /passive
+start /wait msiexec /x {BD37CF23-3458-BFD1-7583-F8FFC37561F2} /qn /norestart /passive
+start /wait msiexec /x {931991F4-99D4-95A6-1235-EAA599884AC6} /qn /norestart /passive
+start /wait msiexec /x {C2471823-76DB-B529-F037-8D02CAC5DE5E} /qn /norestart /passive
+start /wait msiexec /x {1FAB6902-546D-9060-D0C8-4B502160AA06} /qn /norestart /passive
+start /wait msiexec /x {DAE76FE1-BD65-3251-1B6F-6B519A661A1F} /qn /norestart /passive
+start /wait msiexec /x {FE3E16F2-D838-7B5F-A31E-2D55757D18E7} /qn /norestart /passive
+start /wait msiexec /x {BF34B28A-4D50-439A-6B6B-13EA41235E43} /qn /norestart /passive
+start /wait msiexec /x {9E77F8EF-588E-D11B-697F-5514B97779DF} /qn /norestart /passive
+start /wait msiexec /x {571F7B9B-96B8-E1B8-E198-0458BF5F80C4} /qn /norestart /passive
+start /wait msiexec /x {3D516940-6675-41C1-E3DA-E3D358A7C207} /qn /norestart /passive
+start /wait msiexec /x {0AB6726B-2C04-75E6-D30A-AA8C0E26E46A} /qn /norestart /passive
+start /wait msiexec /x {3253D3E5-C08E-E22B-BA99-DE88F520CBB3} /qn /norestart /passive
+start /wait msiexec /x {82EE309C-B63C-1AAA-79AB-8A5E5986B687} /qn /norestart /passive
+start /wait msiexec /x {B9818C90-560C-8DC7-E254-38323B9A41EA} /qn /norestart /passive
+start /wait msiexec /x {E7809829-3AC8-FBFA-2001-0D9BEBE51386} /qn /norestart /passive
+start /wait msiexec /x {1D74451F-B220-E2E4-7FCD-520AA66F1A85} /qn /norestart /passive
+start /wait msiexec /x {B740C369-EA8D-2FDB-4265-CB70DD08095D} /qn /norestart /passive
+start /wait msiexec /x {2CC1453B-3385-F6FF-735F-F3BA36758715} /qn /norestart /passive
+start /wait msiexec /x {F79997CC-F030-93C6-7882-92DC241D7C07} /qn /norestart /passive
+start /wait msiexec /x {7540EB6A-FE9B-4EE2-37D9-A88DC87AA9E6} /qn /norestart /passive
 
-:: Catalyst Control Center - Branding 1.00.0000
+:: Catalyst Control Center - Branding
 start /wait msiexec /x {FB90923E-F94F-4343-A084-F0AB39305C8B} /qn /norestart /passive
 start /wait msiexec /x {01E6CFB0-2EAA-A019-7894-18986696E711} /qn /norestart /passive
 start /wait msiexec /x {0C37C41C-3BD1-256C-3C82-B5C707776249} /qn /norestart /passive
@@ -813,7 +816,32 @@ start /wait msiexec /x {69D85106-CBD8-0F32-DD9E-7F39F5533E19} /qn /norestart /pa
 start /wait msiexec /x {50BFCE80-042B-E53F-05EF-ACA0CC16A0DF} /qn /norestart /passive
 start /wait msiexec /x {9A3F65CA-78FA-4749-004B-23743CF642D1} /qn /norestart /passive
 
-:: Catalyst Control Center multi-lingual Help files. Too many to individually list, Google each GUID for more info
+:: CCC Catalyst Control Center multi-lingual Help files. Too many to individually list, Google each GUID for more info
+start /wait msiexec /x {1E2ABB89-F7F3-8D64-3345-27E5735AA20C} /qn /norestart /passive
+start /wait msiexec /x {990B884F-569C-5078-DD76-8BE91A569291} /qn /norestart /passive
+start /wait msiexec /x {CD4005E4-E612-14BB-1BC4-636AE955D995} /qn /norestart /passive
+start /wait msiexec /x {EB938F46-2780-1AF2-2579-A41EA96F8C1F} /qn /norestart /passive
+start /wait msiexec /x {AA90CE8A-A77C-3CEB-DCD8-56DFDEDE808F} /qn /norestart /passive
+start /wait msiexec /x {D05EA7FA-B112-103C-FBBE-8163B1B33A30} /qn /norestart /passive
+start /wait msiexec /x {221BFD98-55F8-C64E-C2FA-56694133DB69} /qn /norestart /passive
+start /wait msiexec /x {2904E0A2-B74F-EFAD-A523-46D0F64B3B4A} /qn /norestart /passive
+start /wait msiexec /x {A8170CD1-F477-12A2-FCDE-E93759682F6F} /qn /norestart /passive
+start /wait msiexec /x {8B5938FB-35EA-DF7F-E1FF-EB3E577E7125} /qn /norestart /passive
+start /wait msiexec /x {F2569C93-029A-D00E-560F-40954008865B} /qn /norestart /passive
+start /wait msiexec /x {9E77F8EF-588E-D11B-697F-5514B97779DF} /qn /norestart /passive
+start /wait msiexec /x {99D70190-1870-B004-820B-6DCFD622703F} /qn /norestart /passive
+start /wait msiexec /x {6DEE7496-3ED6-DE4C-9BEF-1E7F247CAAD1} /qn /norestart /passive
+start /wait msiexec /x {27282E77-DB14-5769-2032-F381343DAA31} /qn /norestart /passive
+start /wait msiexec /x {5CF1C22A-11DA-C6AC-7E66-289A858F5C46} /qn /norestart /passive
+start /wait msiexec /x {CE24C50B-3A91-3880-4F4D-9EDD595E01DF} /qn /norestart /passive
+start /wait msiexec /x {5C97100A-CBFA-F752-1CC4-8D59BB06DA51} /qn /norestart /passive
+start /wait msiexec /x {5A1AE61E-393A-DE99-4733-AB36127B36F6} /qn /norestart /passive
+start /wait msiexec /x {D33FFCDF-6B95-3586-F8B8-27CE5FF728C6} /qn /norestart /passive
+start /wait msiexec /x {1D74451F-B220-E2E4-7FCD-520AA66F1A85} /qn /norestart /passive
+start /wait msiexec /x {1D9F8C88-F76A-6B07-2276-98DF1173901B} /qn /norestart /passive
+start /wait msiexec /x {086E1D65-EF19-280C-5616-7A87A6B95F88} /qn /norestart /passive
+start /wait msiexec /x {2BC2EDB2-6F5C-3058-D312-B991AB26E870} /qn /norestart /passive
+start /wait msiexec /x {1935505D-28FE-0FFE-9EB6-6AF73397C7BE} /qn /norestart /passive
 start /wait msiexec /x {00CCB6C5-DD11-F614-5955-FACAFA2C80F7} /qn /norestart /passive
 start /wait msiexec /x {01CD9E78-5D95-C7FB-EC23-64B39130EE31} /qn /norestart /passive
 start /wait msiexec /x {020BA2C3-6D2E-78D0-9294-E4DDE937AE01} /qn /norestart /passive
@@ -1343,12 +1371,16 @@ start /wait msiexec /x {FEFF81BF-B911-6755-FBDE-09547BDFD0A2} /qn /norestart /pa
 start /wait msiexec /x {FF10AC4D-3349-99DA-3E58-5197CEA1D833} /qn /norestart /passive
 start /wait msiexec /x {FFCF34B9-A0B1-2E2B-7D7E-8FAB4A781CC9} /qn /norestart /passive
 
+
 :: CITIZEN bloatware (printer)
 start /wait msiexec /x {546D97C7-9DF6-4A2D-BE02-2C0B25FFE1E3} /qn /norestart /passive
 start /wait msiexec /x {39688AE1-0398-4133-942C-EECA9BBD64CC} /qn /norestart /passive
 
 :: CLEART WiMAX Tutorial 1.5.0.10
 start /wait msiexec /x {E289B7DD-6732-4333-A47A-75A145D23EE3} /qn /norestart /passive
+
+:: Clickfree
+start /wait msiexec /x {1EB9B986-CECA-4E05-B454-C9343EE9DDE7} /qn /norestart /passive
 
 :: Comcast Desktop Software (v1.2.0.9) 23
 start /wait msiexec /x {CEF7211D-CE3A-44C4-B321-D84A2099AE94} /qn /norestart /passive
@@ -1429,6 +1461,7 @@ start /wait msiexec /x {C59C179C-668D-49A9-B6EA-0121CCFC1243} /qn /norestart /pa
 :: CyberLink YouCam
 start /wait msiexec /x {A9CEDD6E-4792-493e-BB35-D86D2E188A5A} /qn /norestart /passive
 start /wait msiexec /x {A81EB5BC-F764-308A-B979-0F8F078DAB29} /qn /norestart /passive
+start /wait msiexec /x {01FB4998-33C4-4431-85ED-079E3EEFE75D} /qn /norestart /passive
 
 :: Dell Access
 start /wait msiexec /x {F839C6BD-E92E-48FA-9CE6-7BFAF94F7096} /qn /norestart /passive
@@ -1620,13 +1653,6 @@ start /wait msiexec /x {DC14FF2A-EB53-4093-847D-9314E9555BB6} /qn /norestart /pa
 
 :: Dell Client System Update
 start /wait msiexec /x {69093D49-3DD1-4FB5-A378-0D4DB4CF86EA} /qn /norestart /passive
-start /wait msiexec /x {04566294-A6B6-4462-9721-031073EB3694} /qn /norestart /passive
-start /wait msiexec /x {2B2B45B1-3CA0-4F8D-BBB3-AC77ED46A0FE} /qn /norestart /passive
-:: Dell Command | Update
-start /wait msiexec /x {EC542D5D-B608-4145-A8F7-749C02BE6D94} /qn /norestart /passive
-:: Dell Command | Power
-start /wait msiexec /x {DDDAF4A7-8B7D-4088-AECC-6F50E594B4F5} /qn /norestart /passive
-start /wait msiexec /x {69093D49-3DD1-4FB5-A378-0D4DB4CF86EA} /qn /norestart /passive
 
 :: Dell ControlPoint
 start /wait msiexec /x {A9C61491-EF2F-4ED8-8E10-FB33E3C6B55A} /qn /norestart /passive
@@ -1668,7 +1694,7 @@ start /wait msiexec /x {CAC1E444-ECC4-4FF8-B328-5E547FD608F8} /qn /norestart /pa
 
 :: Dell Protected Workspace
 echo Searching for Dell Protected Workspace
-wmic product where name="Dell Protected Workspace" call uninstall /nointeractive
+wmic product where name="Dell Protected Workspace" call uninstall /nointeractive 2>NUL
 
 :: Dell QuickSet32 and QuickSet64
 start /wait msiexec /x {ED2A3C11-3EA8-4380-B59C-F2C1832731B0} /qn /norestart /passive
@@ -1722,7 +1748,7 @@ start /wait msiexec /x {177CD779-4EEC-43C5-8DEA-4E0EC103624B} /qn /norestart /pa
 :: Driver Manager 8.1
 start /wait msiexec /x {27F1E086-5691-4EB8-8BA1-5CBA87D67EB5} /qn /norestart /passive
 
-:: Dropbox Setup 1.0.0.5
+:: Dropbox Setup // shared with Dropbox Update Helper
 start /wait msiexec /x {099218A5-A723-43DC-8DB5-6173656A1E94} /qn /norestart /passive
 
 :: Dropbox Update Helper 1.3.27.33
@@ -1817,6 +1843,9 @@ start /wait msiexec /x {597A58EC-42D6-4940-8739-FB94491B013C} /qn /norestart /pa
 :: GeekBuddy
 start /wait msiexec /x {17004FB0-9CFD-43DC-BB2D-E2BA612D98D0} /qn /norestart /passive
 
+:: GlobalUpdate Helper
+start /wait msiexec /x {A92DAB39-4E2C-4304-9AB6-BC44E68B55E2} /qn /norestart /passive
+
 :: Google Toolbar for Internet Explorer
 start /wait msiexec /x {18455581-E099-4BA8-BC6B-F34B2F06600C} /qn /norestart /passive
 start /wait msiexec /x {2318C2B1-4965-11d4-9B18-009027A5CD4F} /qn /norestart /passive
@@ -1827,6 +1856,7 @@ start /wait msiexec /x {60EC980A-BDA2-4CB6-A427-B07A5498B4CA} /qn /norestart /pa
 start /wait msiexec /x {A92DAB39-4E2C-4304-9AB6-BC44E68B55E2} /qn /norestart /passive
 start /wait msiexec /x {A4DE5CD7-96D6-3979-8C39-E864396AFFC0} /qn /norestart /passive
 start /wait msiexec /x {5BAA8884-F661-464B-B5B2-5C6C632BFC21} /qn /norestart /passive
+start /wait msiexec /x {A92DAB39-4E2C-4304-9AB6-BC44E68B55E2} /qn /norestart /passive
 
 :: Hewlett-Packard ACLM.NET
 start /wait msiexec /x {6F340107-F9AA-47C6-B54C-C3A19F11553F} /qn /norestart /passive
@@ -1918,6 +1948,7 @@ start /wait msiexec /x {85DF2EED-08BC-46FB-90DA-28B0D0A8E8A8} /qn /norestart /pa
 start /wait msiexec /x {DFD6EBE3-F0DA-4E24-9202-37AF8D20888B} /qn /norestart /passive
 start /wait msiexec /x {ADDF4B84-5D28-4EAE-8511-EF808C8BC81C} /qn /norestart /passive
 start /wait msiexec /x {1504CF6F-8139-497F-86FC-46174B67CF7F} /qn /norestart /passive
+start /wait msiexec /x {59F8C5AA-91BD-423D-BF05-09A80F39898F} /qn /norestart /passive
 
 :: HP Copy (various versions)
 start /wait msiexec /x {3C92B2E6-380D-4fef-B4DF-4A3B4B669771} /qn /norestart /passive
@@ -2004,6 +2035,7 @@ start /wait msiexec /x {A1CFA587-90D4-4DE6-B200-68CC0F92252F} /qn /norestart /pa
 start /wait msiexec /x {53AE55F3-8E99-4776-A347-06222894ECD3} /qn /norestart /passive
 start /wait msiexec /x {95CC589C-8D98-4539-9878-4E6A342304F2} /qn /norestart /passive
 start /wait msiexec /x {9D20F550-4222-49A7-A7A7-7CAAB2E16C9C} /qn /norestart /passive
+start /wait msiexec /x {89A12FD9-8FA0-4EB9-AE9A-34C7EB25C25B} /qn /norestart /passive
 
 :: HP DocProc
 start /wait msiexec /x {676981B7-A2D9-49D0-9F4C-03018F131DA9} /qn /norestart /passive
@@ -2037,12 +2069,14 @@ start /wait msiexec /x {8894A6A7-547D-4326-B4BC-FB62B9075CE2} /qn /norestart /pa
 start /wait msiexec /x {53D3E126-699A-4D92-AA66-6560D573553E} /qn /norestart /passive
 start /wait msiexec /x {60F90886-FAEE-4768-9817-093AB0F30540} /qn /norestart /passive
 
+:: HP FWUpdateEDO2
+start /wait msiexec /x {415FA9AD-DA10-4ABE-97B6-5051D4795C90} /qn /norestart /passive
+
 :: HP GPBaseService2 (popups)
 start /wait msiexec /x {BB3447F6-9553-4AA9-960E-0DB5310C5779} /qn /norestart /passive
 
 :: HP misc Help, eDocs and User Guide GUIDs (various versions for various products; most of these should be caught in the wildcard scan)
 start /wait msiexec /x {11C9A461-DD9D-4C71-85A4-6DCE7F99CC44} /qn /norestart /passive
-start /wait msiexec /x {24C7AD6B-F418-4D3B-B7F2-F3603FD720BF} /qn /norestart /passive
 start /wait msiexec /x {B6B9006D-5A0A-4F17-B69A-42F48C1FC30C} /qn /norestart /passive
 start /wait msiexec /x {445CC807-9384-47FA-A2B6-FFE970352B88} /qn /norestart /passive
 start /wait msiexec /x {F90A86C9-7779-47DD-AC06-8EE832C55F55} /qn /norestart /passive
@@ -2073,6 +2107,7 @@ start /wait msiexec /x {55D8D1AB-94C2-498F-A165-608B834A30EA} /qn /norestart /pa
 start /wait msiexec /x {274E6D9A-7CCD-4D67-9660-639486F466B2} /qn /norestart /passive
 start /wait msiexec /x {92AB9371-D327-4D56-9BDD-B38A671A631D} /qn /norestart /passive
 start /wait msiexec /x {32A4CF00-9FAC-47c8-9B37-91CC23815D64} /qn /norestart /passive
+start /wait msiexec /x {6357D25F-A9C9-4CC7-A1FB-0DCF344E7C40} /qn /norestart /passive
 
 :: HP Insight Diagnostics Online Edition for Windows 9.3.0
 start /wait msiexec /x {DBE16A07-DDFF-4453-807A-212EF93916E0} /qn /norestart /passive
@@ -2148,6 +2183,7 @@ start /wait msiexec /x {E3D43596-7E26-479E-B718-77CB3D9270F6} /qn /norestart /pa
 start /wait msiexec /x {A90F92B7-3C3F-4AEF-B281-31DD17BB73CA} /qn /norestart /passive
 start /wait msiexec /x {37839D69-6DA4-4125-B33A-30DE86345DF4} /qn /norestart /passive
 start /wait msiexec /x {FEB2C4AA-661E-483F-9626-21A8ACFD10F2} /qn /norestart /passive
+start /wait msiexec /x {D2064264-3162-4DB1-AFE0-167BEFBBCD9C} /qn /norestart /passive
 
 :: HP PostScript Converter
 start /wait msiexec /x {6E14E6D6-3175-4E1A-B934-CAB5A86367CD} /qn /norestart /passive
@@ -2414,6 +2450,12 @@ start /wait msiexec /x {EAF826C0-245E-4D02-9D51-BA4C98717EAE} /qn /norestart /pa
 :: Intel (R) Pro Alerting Agent
 start /wait msiexec /x {FCDDBA94-7389-49E5-B287-2661460BAF18} /qn /norestart /passive
 
+:: Intel(R) Rapid Storage Technology
+start /wait msiexec /x {96714280-14E6-4DF7-BACD-F797C0F17C3D} /qn /norestart /passive
+
+:: Intel(R) Smart Connect Technology
+start /wait msiexec /x {9B5FD763-5074-474C-B898-24567E6450C8} /qn /norestart /passive
+
 :: Intel(R) Technology Access
 start /wait msiexec /x {413fe921-b226-41c8-bc3c-574074ceec4d} /qn /norestart /passive
 start /wait msiexec /x {583882E7-EA75-4BF0-94FA-7DD5A3731C76} /qn /norestart /passive
@@ -2582,6 +2624,9 @@ start /wait msiexec /x {174A3B31-4C43-43DD-866F-73C9DB887B48} /qn /norestart /pa
 :: Setup1 (??)
 start /wait msiexec /x {86091EC1-DD17-4814-A54B-0A634CB8D82C} /qn /norestart /passive
 
+:: Snap.Do (browser hijacker)
+start /wait msiexec /x {CC6F61A9-A55E-4D04-A674-7A498CD8B809} /qn /norestart /passive
+
 :: SSN Librarian (some sketchy Russian program)
 start /wait msiexec /x {1D425886-3FE1-41AA-8D7A-E432CE29A4AE} /qn /norestart /passive
 
@@ -2633,6 +2678,7 @@ start /wait msiexec /x {90150000-007E-0000-0000-0000000FF1CE} /qn /norestart /pa
 start /wait msiexec /x {90150000-008C-0409-1000-0000000FF1CE} /qn /norestart /passive
 start /wait msiexec /x {90150000-008C-0000-1000-0000000FF1CE} /qn /norestart /passive
 start /wait msiexec /x {90150000-008C-0409-0000-0000000FF1CE} /qn /norestart /passive
+start /wait msiexec /x {90150000-008F-0000-1000-0000000FF1CE} /qn /norestart /passive
 
 :: Microsoft Office 2007 "Get Started Tab" for PowerPoint, Excel, and Word
 start /wait msiexec /x {5AE5DB70-5CE6-4876-A83E-8246CC36FC28} /qn /norestart /passive
@@ -2673,6 +2719,9 @@ start /wait msiexec /x {779DECD7-E072-4B56-9B6B-BEB5973EEEB5} /qn /norestart /pa
 start /wait msiexec /x {AC2BA148-EE9C-4F1A-AFCE-F38C2C71D29B} /qn /norestart /passive
 start /wait msiexec /x {3AC54383-31D1-4907-961B-B12CBB1D0AE8} /qn /norestart /passive
 
+:: MSN Explorer Repair Tool
+start /wait msiexec /x {3D36105D-D6C2-413A-9355-7370E8D9125B} /qn /norestart /passive
+
 :: MSN Toolbar Platform
 start /wait msiexec /x {C9D43B38-34AD-4EC2-B696-46F42D49D174} /qn /norestart /passive
 
@@ -2689,10 +2738,11 @@ start /wait msiexec /x {48C0866E-57EB-444C-8371-8E4321066BC3} /qn /norestart /pa
 :: NETGEAR A6100 Genie 1.0.0.12
 start /wait msiexec /x {56C049BE-79E9-4502-BEA7-9754A3E60F9B} /qn /norestart /passive
 
-:: Norton 360, Internet Security, Online Backup
+:: Norton 360 // Internet Security // Online Backup
 start /wait msiexec /x {E4FC1ED9-E20C-4621-B834-03C388278DD8} /qn /norestart /passive
 start /wait msiexec /x {63A6E9A9-A190-46D4-9430-2DB28654AFD8} /qn /norestart /passive
 start /wait msiexec /x {7B15D70E-9449-4CFB-B9BC-798465B2BD5C} /qn /norestart /passive
+start /wait msiexec /x {40A66DF6-22D3-44B5-A7D3-83B118A2C0DC} /qn /norestart /passive
 
 :: Nuance Cloud Connector
 start /wait msiexec /x {EEE31B2B-F517-4BD2-8F92-57E4AE938BA3} /qn /norestart /passive
@@ -2702,6 +2752,10 @@ start /wait msiexec /x {042A6F10-F770-4886-A502-B795DCF2D3B5} /qn /norestart /pa
 
 :: NVIDIA HD Audio Driver
 start /wait msiexec /x {B2FE1952-0186-46C3-BAEC-A80AA35AC5B8} /qn /norestart /passive
+
+:: Office 2013 C2R Suite
+start /wait msiexec /x {90150000-0138-0409-0000-0000000FF1CE} /qn /norestart /passive
+start /wait msiexec /x "C:\ProgramData\Microsoft\OEMOffice15\OOBE\x86\oemoobe.msi" /qn /norestart
 
 :: opensource
 start /wait msiexec /x {3677D4D8-E5E0-49FC-B86E-06541CF00BBE} /qn /norestart /passive
@@ -2884,6 +2938,9 @@ start /wait msiexec /x {1206EF92-2E83-4859-ACCB-2048C3CB7DA6} /qn /norestart /pa
 start /wait msiexec /x {9A00EC4E-27E1-42C4-98DD-662F32AC8870} /qn /norestart /passive
 start /wait msiexec /x {AB708C9B-97C8-4AC9-899B-DBF226AC9382} /qn /norestart /passive
 
+:: Sony Keyboard_Shortcuts
+start /wait msiexec /x {FE8974B4-479C-4DBA-8544-9E5342ABB26A} /qn /norestart /passive
+
 :: Sony Media Go
 start /wait msiexec /x {167A1F6A-9BF2-4B24-83DB-C6D659F680EA} /qn /norestart /passive
 
@@ -2892,6 +2949,10 @@ start /wait msiexec /x {E50FC5DB-7CBD-407D-A46E-0C13E45BC386} /qn /norestart /pa
 
 :: Sony OOBE
 start /wait msiexec /x {18894D16-5448-4BF9-A128-F7E937322F91} /qn /norestart /passive
+
+:: Sony PlayMemories Home
+start /wait msiexec /x {E03CD71A-F595-49DF-9ADC-0CFC93B1B211} /qn /norestart /passive
+start /wait msiexec /x {886C0C18-F905-49B2-90BA-EFC0FEDF27C6} /qn /norestart /passive
 
 :: Sony Quick Web Access
 start /wait msiexec /x {13EC74A6-4707-4D26-B9B9-E173403F3B08} /qn /norestart /passive
@@ -2905,6 +2966,66 @@ start /wait msiexec /x {D56DA747-5FDB-4AD5-9A6A-3481C0ED44BD} /qn /norestart /pa
 :: Sony TrackID(TM) with BRAVIA (poor Shazzam clone)
 start /wait msiexec /x {858B32BD-121C-4AC8-BD87-CE37C51C03E2} /qn /norestart /passive
 start /wait msiexec /x {2F41EF61-A066-4EBF-84F8-21C1B317A780} /qn /norestart /passive
+
+:: Sony VAIO Data Restore Tool
+start /wait msiexec /x {5156C9BF-1C27-430B-96D8-7129F11699A8} /qn /norestart /passive
+
+:: Sony VAIO - Media Gallery
+start /wait msiexec /x {7C7BC722-BB95-4A6E-9373-DA706D83430B} /qn /norestart /passive
+start /wait msiexec /x {0EB7792D-EFA2-42AB-9A22-F33D9458E974} /qn /norestart /passive
+
+:: Sony VAIO - Microsoft Visual C++ 2010 SP1 RUntime 10.0.40219.325
+start /wait msiexec /x {34EB42BE-F4D3-44C1-B28E-9740115DB72C} /qn /norestart /passive
+
+:: Sony VAIO - PMB
+start /wait msiexec /x {B6A98E5F-D6A7-46FB-9E9D-1F7BF443491C} /qn /norestart /passive
+
+:: Sony VAIO - PMB VAIO Edition Guide (and associated "Plugin" GUIDs)
+start /wait msiexec /x {339F9B4D-00CB-4C1C-BED8-EC86A9AB602A} /qn /norestart /passive
+start /wait msiexec /x {133D3F07-D558-46CE-80E8-F4D75DBBAD63} /qn /norestart /passive
+start /wait msiexec /x {270380EB-8812-42E1-8289-53700DB840D2} /qn /norestart /passive
+start /wait msiexec /x {8356CB97-A48F-44CB-837A-A12838DC4669} /qn /norestart /passive
+
+:: Sony VAIO - Remote Keyboard, Remote Keyboard with PlayStation(R)3, Remote Play with Playstation(R)3
+start /wait msiexec /x {7396FB15-9AB4-4B78-BDD8-24A9C15D2C65} /qn /norestart /passive
+start /wait msiexec /x {6466EF6E-700E-470F-94CB-D0050302C84E} /qn /norestart /passive
+start /wait msiexec /x {E682702C-609C-4017-99E7-3129C163955F} /qn /norestart /passive
+start /wait msiexec /x {07441A52-E208-478A-92B7-5C337CA8C131} /qn /norestart /passive
+
+:: Sony VAIO Care // VAIO Care Recovery // VAIO Help and Support
+start /wait msiexec /x {D9FFE40D-1A85-4541-992C-5EF505F391A4} /qn /norestart /passive
+start /wait msiexec /x {55A60C1D-BEBF-4249-BFB2-F4E5C2E77988} /qn /norestart /passive
+start /wait msiexec /x {471F7C0A-CA3A-4F4C-8346-DE36AD5E23D1} /qn /norestart /passive
+start /wait msiexec /x {6ED1750E-F44F-4635-8F0D-B76B9262B7FB} /qn /norestart /passive
+start /wait msiexec /x {AD3E7141-A22E-40F1-A7A4-55E898AE35E3} /qn /norestart /passive
+
+:: Sony VAIO Control Center // CPU Fan Diagnostic // Data Restore Tool // Easy Connect
+start /wait msiexec /x {8E797841-A110-41FD-B17A-3ABC0641187A} /qn /norestart /passive
+start /wait msiexec /x {BCE6E3D7-B565-4E1B-AC77-F780666A35FB} /qn /norestart /passive
+start /wait msiexec /x {3267B2E9-9DF5-4251-87C8-33412234C77F} /qn /norestart /passive
+start /wait msiexec /x {57B955CE-B5D3-495D-AF1B-FAEE0540BFEF} /qn /norestart /passive
+start /wait msiexec /x {7C80D30A-AC02-4E3F-B95D-29F0E4FF937B} /qn /norestart /passive
+
+:: Sony VAIO Gate // Gate Default // Help and Support // Improvement // Manual // Gesture Control
+start /wait msiexec /x {A7C30414-2382-4086-B0D6-01A88ABA21C3} /qn /norestart /passive
+start /wait msiexec /x {AE5F3379-8B81-457E-8E09-7E61D941AFA4} /qn /norestart /passive
+start /wait msiexec /x {B7546697-2A80-4256-A24B-1C33163F535B} /qn /norestart /passive
+start /wait msiexec /x {0164FA3B-182D-4237-B22A-081C0B55E0D3} /qn /norestart /passive
+start /wait msiexec /x {3A26D9BD-0F73-432D-B522-2BA18138F7EF} /qn /norestart /passive
+start /wait msiexec /x {C6E893E7-E5EA-4CD5-917C-5443E753FCBD} /qn /norestart /passive
+start /wait msiexec /x {C8544A9A-76BE-4F82-811E-979799AE493B} /qn /norestart /passive
+
+:: Sony VAIOCareLearnContents
+start /wait msiexec /x {05959BC8-751E-43B1-A427-233DA743E179} /qn /norestart /passive
+
+:: Sony VAIO OOB (out of box experience)
+start /wait msiexec /x {D9777637-33B7-47A9-800C-F6A2CD4EB0FE} /qn /norestart /passive
+
+:: Sony VAIO Sample Contents // Satisfaction Survey // Transfer Support VAIO Update
+start /wait msiexec /x {547C9EB4-4CA6-402F-9D1B-8BD30DC71E44} /qn /norestart /passive
+start /wait msiexec /x {5DDAFB4B-C52E-468A-9E23-3B0CEEB671BF} /qn /norestart /passive
+start /wait msiexec /x {0899D75A-C2FC-42EA-A702-5B9A5F24EAD5} /qn /norestart /passive
+start /wait msiexec /x {9FF95DA2-7DA1-4228-93B7-DED7EC02B6B2} /qn /norestart /passive
 
 :: Sony VCCx64, VCCx86, VIx64, and VIx86
 start /wait msiexec /x {549AD5FB-F52D-4307-864A-C0008FB35D96} /qn /norestart /passive
@@ -2953,6 +3074,7 @@ start /wait msiexec /x {63B7AC7E-0178-4F4F-A79B-08D97ADD02D7} /qn /norestart /pa
 
 :: Toshiba Audio Enhancement
 start /wait msiexec /x {1515F5E3-29EA-4CD1-A981-032D88880F09} /qn /norestart /passive
+start /wait msiexec /x {F2DE0088-CF05-4DAB-AC4D-9D2C4D657456} /qn /norestart /passive
 
 :: Toshiba Application Installer
 start /wait msiexec /x {970472D0-F5F9-4158-A6E3-1AE49EFEF2D3} /qn /norestart /passive
@@ -2970,18 +3092,21 @@ start /wait msiexec /x {1B87C40B-A60B-4EF3-9A68-706CF4B69978} /qn /norestart /pa
 
 :: Toshiba Bluetooth Statck for Windows by Toshiba
 start /wait msiexec /x {230D1595-57DA-4933-8C4E-375797EBB7E1} /qn /norestart /passive
+start /wait msiexec /x {CEBB6BFB-D708-4F99-A633-BC2600E01EF6} /qn /norestart /passive
 
 :: Toshiba Book Place
 start /wait msiexec /x {92C7DC44-DAD3-49FE-B89B-F92C6BA9A331} /qn /norestart /passive
 start /wait msiexec /x {39187A4B-7538-4BE7-8BAD-9E83303793AA} /qn /norestart /passive
 start /wait msiexec /x {05A55927-DB9B-4E26-BA44-828EBFF829F0} /qn /norestart /passive
 
-:: Toshiba Bulletin Board
+:: TOSHIBA Bulletin Board
 start /wait msiexec /x {C14518AF-1A0F-4D39-8011-69BAA01CD380} /qn /norestart /passive
 start /wait msiexec /x {229C190B-7690-40B7-8680-42530179F3E9} /qn /norestart /passive
+start /wait msiexec /x {1C8C049A-145F-4A6E-8290-B5C245EBE39D} /qn /norestart /passive
 
 :: TOSHIBA ConfigFree
 start /wait msiexec /x {716C8275-A4A9-48CB-88C0-9829334CA3C5} /qn /norestart /passive
+start /wait msiexec /x {EAF55C99-A493-4373-A8C5-09ACC5DCD7EF} /qn /norestart /passive
 
 :: Toshiba Desktop Assist
 start /wait msiexec /x {95CCACF0-010D-45F0-82BF-858643D8BC02} /qn /norestart /passive
@@ -2997,14 +3122,18 @@ start /wait msiexec /x {11244D6B-9842-440F-8579-6A4D771A0D9B} /qn /norestart /pa
 :: TOSHIBA Eco Utility
 start /wait msiexec /x {72EFCFA8-3923-451D-AF52-7CE9D87BC2A1} /qn /norestart /passive
 start /wait msiexec /x {59358FD4-252B-4B38-AB81-955C491A494F} /qn /norestart /passive
+start /wait msiexec /x {2C486987-D447-4E36-8D61-86E48E24199C} /qn /norestart /passive
 
-:: TOSHIBA Extended Tiles for Windows Mobility Center
+:: TOSHIBA Extended Tiles for Windows Mobility Center // GUID shared with TOSHIBA Disc Creator
 start /wait msiexec /x {5DA0E02F-970B-424B-BF41-513A5018E4C0} /qn /norestart /passive
+
+:: TOSHIBA Face Recognition
+start /wait msiexec /x {F67FA545-D8E5-4209-86B1-AEE045D1003F} /qn /norestart /passive
 
 :: TOSHIBA Flash Cards Support Utility
 start /wait msiexec /x {617C36FD-0CBE-4600-84B2-441CEB12FADF} /qn /norestart /passive
 
-:: TOSHIBA HDD/SDD Alert 3.1.64.6
+:: TOSHIBA HDD/SDD Alert 3.1.64.x
 start /wait msiexec /x {D4322448-B6AF-4316-B859-D8A0E84DCB38} /qn /norestart /passive
 
 :: TOSHIBA Media Controller and TOSHIBA Media Controller Plug-in 1.0.5.11
@@ -3014,6 +3143,12 @@ start /wait msiexec /x {F26FDF57-483E-42C8-A9C9-EEE1EDB256E0} /qn /norestart /pa
 :: Toshiba Password Utility
 start /wait msiexec /x {26BB68BB-CF93-4A12-BC6D-A3B6F53AC8D9} /qn /norestart /passive
 start /wait msiexec /x {21A63CA3-75C0-4E56-B602-B7CD2EF6B621} /qn /norestart /passive
+
+:: TOSHIBA PC Health Monitor
+start /wait msiexec /x {9DECD0F9-D3E8-48B0-A390-1CF09F54E3A4} /qn /norestart /passive
+
+:: TOSHIBA Peak Shift Control
+start /wait msiexec /x {73F1BDB6-11E1-11D5-9DC6-00C04F2FC33B} /qn /norestart /passive
 
 :: TOSHIBA Quality Application
 start /wait msiexec /x {E69992ED-A7F6-406C-9280-1C156417BC49} /qn /norestart /passive
@@ -3057,12 +3192,14 @@ start /wait msiexec /x {FBFCEEA5-96EA-4C8E-9262-43CBBEBAE413} /qn /norestart /pa
 
 :: TOSHIBA Web Camera Application
 start /wait msiexec /x {5E6F6CF3-BACC-4144-868C-E14622C658F3} /qn /norestart /passive
+start /wait msiexec /x {6F3C8901-EBD3-470D-87F8-AC210F6E5E02} /qn /norestart /passive
 
 :: TOSHIBA VIDEO PLAYER
 start /wait msiexec /x {FF07604E-C860-40E9-A230-E37FA41F103A} /qn /norestart /passive
 
 :: Toshiba Wireless LAN Indicator
 start /wait msiexec /x {CDADE9BC-612C-42B8-B929-5C6A823E7FF9} /qn /norestart /passive
+start /wait msiexec /x {5B01BCB7-A5D3-476F-AF11-E515BA206591} /qn /norestart /passive
 
 :: TrayApp (various versions)
 start /wait msiexec /x {CD31E63D-47FD-491C-8117-CF201D0AFAB5} /qn /norestart /passive
@@ -3081,56 +3218,11 @@ start /wait msiexec /x {0A07E717-BB5D-4B99-840B-6C5DED52B277} /qn /norestart /pa
 :: uLead Burn.Now 4.5 4.5.0
 start /wait msiexec /x {FB3A15FD-FC67-3A2F-892B-6890B0C56EA9} /qn /norestart /passive
 
-:: VAIO - Media Gallery
-start /wait msiexec /x {7C7BC722-BB95-4A6E-9373-DA706D83430B} /qn /norestart /passive
-
-:: VAIO - PMB
-start /wait msiexec /x {B6A98E5F-D6A7-46FB-9E9D-1F7BF443491C} /qn /norestart /passive
-
-:: VAIO - PMB VAIO Edition Guide (and associated "Plugin" GUIDs)
-start /wait msiexec /x {339F9B4D-00CB-4C1C-BED8-EC86A9AB602A} /qn /norestart /passive
-start /wait msiexec /x {133D3F07-D558-46CE-80E8-F4D75DBBAD63} /qn /norestart /passive
-start /wait msiexec /x {270380EB-8812-42E1-8289-53700DB840D2} /qn /norestart /passive
-start /wait msiexec /x {8356CB97-A48F-44CB-837A-A12838DC4669} /qn /norestart /passive
-
-:: VAIO - Remote Keyboard, Remote Keyboard with PlayStation(R)3, Remote Play with Playstation(R)3
-start /wait msiexec /x {7396FB15-9AB4-4B78-BDD8-24A9C15D2C65} /qn /norestart /passive
-start /wait msiexec /x {6466EF6E-700E-470F-94CB-D0050302C84E} /qn /norestart /passive
-start /wait msiexec /x {E682702C-609C-4017-99E7-3129C163955F} /qn /norestart /passive
-start /wait msiexec /x {07441A52-E208-478A-92B7-5C337CA8C131} /qn /norestart /passive
-
-:: VAIO Care, VAIO Care Recovery, VAIO Help and Support
-start /wait msiexec /x {D9FFE40D-1A85-4541-992C-5EF505F391A4} /qn /norestart /passive
-start /wait msiexec /x {471F7C0A-CA3A-4F4C-8346-DE36AD5E23D1} /qn /norestart /passive
-start /wait msiexec /x {6ED1750E-F44F-4635-8F0D-B76B9262B7FB} /qn /norestart /passive
-start /wait msiexec /x {AD3E7141-A22E-40F1-A7A4-55E898AE35E3} /qn /norestart /passive
-
-:: VAIO Control Center, CPU Fan Diagnostic, Data Restore Tool, and Easy Connect
-start /wait msiexec /x {8E797841-A110-41FD-B17A-3ABC0641187A} /qn /norestart /passive
-start /wait msiexec /x {BCE6E3D7-B565-4E1B-AC77-F780666A35FB} /qn /norestart /passive
-start /wait msiexec /x {3267B2E9-9DF5-4251-87C8-33412234C77F} /qn /norestart /passive
-start /wait msiexec /x {57B955CE-B5D3-495D-AF1B-FAEE0540BFEF} /qn /norestart /passive
-start /wait msiexec /x {7C80D30A-AC02-4E3F-B95D-29F0E4FF937B} /qn /norestart /passive
-
-:: VAIO Gate, Gate Default, Help and Support, Improvement, and Manual
-start /wait msiexec /x {A7C30414-2382-4086-B0D6-01A88ABA21C3} /qn /norestart /passive
-start /wait msiexec /x {AE5F3379-8B81-457E-8E09-7E61D941AFA4} /qn /norestart /passive
-start /wait msiexec /x {B7546697-2A80-4256-A24B-1C33163F535B} /qn /norestart /passive
-start /wait msiexec /x {0164FA3B-182D-4237-B22A-081C0B55E0D3} /qn /norestart /passive
-start /wait msiexec /x {3A26D9BD-0F73-432D-B522-2BA18138F7EF} /qn /norestart /passive
-start /wait msiexec /x {C6E893E7-E5EA-4CD5-917C-5443E753FCBD} /qn /norestart /passive
-
-:: VAIO Sample Contents, Satisfaction Survey., Transfer Support VAIO Update
-start /wait msiexec /x {547C9EB4-4CA6-402F-9D1B-8BD30DC71E44} /qn /norestart /passive
-start /wait msiexec /x {5DDAFB4B-C52E-468A-9E23-3B0CEEB671BF} /qn /norestart /passive
-start /wait msiexec /x {0899D75A-C2FC-42EA-A702-5B9A5F24EAD5} /qn /norestart /passive
-start /wait msiexec /x {9FF95DA2-7DA1-4228-93B7-DED7EC02B6B2} /qn /norestart /passive
+:: Vegas Movie Studio HD Platinum 11.0
+start /wait msiexec /x {CE3DE3AE-F384-11E0-B00E-F04DA23A5C58} /qn /norestart /passive
 
 :: VIP Access (Lenovo-installed OEM bloatware for Verisign)
 start /wait msiexec /x {E8D46836-CD55-453C-A107-A59EC51CB8DC} /qn /norestart /passive
-
-:: WOT for Internet Explorer plugin
-start /wait msiexec /x {373B90E1-A28C-434C-92B6-7281AFA6115A} /qn /norestart /passive
 
 :: Video Downloader, VideoManager, VideoStage, VideoToolkit
 start /wait msiexec /x {62796191-6F12-4ABE-BA8B-B4D4A266C997} /qn /norestart /passive
@@ -3158,8 +3250,14 @@ start /wait msiexec /x {9B56B031-A6C0-4BB7-8F61-938548C1B759} /qn /norestart /pa
 start /wait msiexec /x {36AC0D1D-9715-4F13-B6A4-86F1D35FB4DF} /qn /norestart /passive
 start /wait msiexec /x {03D562B5-C4E2-4846-A920-33178788BE00} /qn /norestart /passive
 
+:: Windows 7 USB/DVD Download Tool
+start /wait msiexec /x {CCF298AF-9CE1-4B26-B251-486E98A34789} /qn /norestart /passive
+
 :: Windows 7 Upgrade Advisor
 start /wait msiexec /x {AAF91344-2808-4D6B-9242-FBE5AF79D60A} /qn /norestart /passive
+
+:: Windows Live Family Safety // Disabled by Vocatus for Tron (some family systems may be using this)
+::start /wait msiexec /x {5F611ADA-B98C-4DBB-ADDE-414F08457ECF} /qn /norestart /passive
 
 :: Windows Live Sign-in Assistant
 start /wait msiexec /x {CE52672C-A0E9-4450-8875-88A221D5CD50} /qn /norestart /passive
@@ -3176,6 +3274,9 @@ start /wait msiexec /x {CDC1AB00-01FF-4FC7-816A-16C67F0923C0} /qn /norestart /pa
 
 :: Windows Live Toolbar
 start /wait msiexec /x {995F1E2E-F542-4310-8E1D-9926F5A279B3} /qn /norestart /passive
+
+:: WOT for Internet Explorer plugin
+start /wait msiexec /x {373B90E1-A28C-434C-92B6-7281AFA6115A} /qn /norestart /passive
 
 :: Xmarks for IE
 start /wait msiexec /x {ABFA6EAE-C9C0-4B39-B722-02094EF6B889} /qn /norestart /passive
