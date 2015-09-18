@@ -3241,7 +3241,8 @@ start /wait msiexec /x {23170F69-40C1-2702-0938-000001000000} /qn /norestart /pa
 start /wait msiexec /x {EE691BD9-2B2C-6BFB-6389-ABAF5AD2A4A1} /qn /norestart /passive
 start /wait msiexec /x {6E3610B2-430D-4EB0-81E3-2B57E8B9DE8D} /qn /norestart /passive
 start /wait msiexec /x {9E9EF3EC-22BC-445C-A883-D8DB2908698D} /qn /norestart /passive
-:: \/ "Delicious Emilys Childhood Memories Premium Edition", also used by "Enterprise 50.0.165.000"
+
+:: "Delicious Emilys Childhood Memories Premium Edition", also used by "Enterprise 50.0.165.000"
 start /wait msiexec /x {FC0ADA4D-8FA5-4452-8AFF-F0A0BAC97EF7} /qn /norestart /passive
 start /wait msiexec /x {DD7C5FC1-DCA5-487A-AF23-658B1C00243F} /qn /norestart /passive
 start /wait msiexec /x {0F929651-F516-4956-90F2-FFBD2CD5D30E} /qn /norestart /passive
@@ -3321,6 +3322,7 @@ start /wait msiexec /x {98BED31B-B364-4D74-BFBD-5C070E5DA77D} /qn /norestart /pa
 start /wait msiexec /x {57C51D56-B287-4C11-9192-EC3C46EF76A4} /qn /norestart /passive
 start /wait msiexec /x {51C839E1-2BE4-4E77-A1BA-CCEA5DAFA741} /qn /norestart /passive
 start /wait msiexec /x {6B33492E-FBBC-4EC3-8738-09E16E395A10} /qn /norestart /passive
+
 :: Bing/Windows Live Bar Removal
 start /wait msiexec /x {C28D96C0-6A90-459E-A077-A6706F4EC0FC} /qn /norestart /passive
 start /wait msiexec /x {786C4AD1-DCBA-49A6-B0EF-B317A344BD66} /qn /norestart /passive
@@ -3329,16 +3331,22 @@ start /wait msiexec /x {341201D4-4F61-4ADB-987E-9CCE4D83A58D} /qn /norestart /pa
 start /wait msiexec /x {F084395C-40FB-4DB3-981C-B51E74E1E83D} /qn /norestart /passive
 start /wait msiexec /x {D5A145FC-D00C-4F1A-9119-EB4D9D659750} /qn /norestart /passive
 start /wait msiexec /x {1e03db52-d5cb-4338-a338-e526dd4d4db1} /qn /norestart /passive
-:: Removes Live Mesh
+
+:: Live Mesh
 start /wait msiexec /x {DECDCB7C-58CC-4865-91AF-627F9798FE48} /qn /norestart /passive
-:: Removes Live Mail
+
+:: Live Mail
 start /wait msiexec /x {C66824E4-CBB3-4851-BB3F-E8CFD6350923} /qn /norestart /passive
-:: Removes Live Mesh ActiveX
+
+:: Live Mesh ActiveX
 start /wait msiexec /x {2902F983-B4C1-44BA-B85D-5C6D52E2C441} /qn /norestart /passive
-:: Removes Live Messager
+
+:: Live Messager
 start /wait msiexec /x {EB4DF488-AAEF-406F-A341-CB2AAA315B90} /qn /norestart /passive
-:: removes Energy Star
+
+:: Energy Star
 start /wait msiexec /x {bd1a34c9-4764-4f79-ae1f-112f8c89d3d4} /qn /norestart /passive
+
 :: Random bunch of clutter here, 
 start /wait msiexec /x {23544215-E6E6-448B-B6E9-6268D5B3E74D} /qn /norestart /passive
 start /wait msiexec /x {438363A8-F486-4C37-834C-4955773CB3D3} /qn /norestart /passive
