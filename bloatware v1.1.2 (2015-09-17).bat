@@ -111,7 +111,7 @@ IF /I "%RemoveOffice%" NEQ "N" GOTO START
 echo.
 :: Office 2013 C2R Suite
 start /wait msiexec /x {90150000-0138-0409-0000-0000000FF1CE} /qn /norestart /passive
-start /wait msiexec /x "C:\ProgramData\Microsoft\OEMOffice15\OOBE\x86\oemoobe.msi" /qn /norestart
+start /wait msiexec /x "%ProgramData%\Microsoft\OEMOffice15\OOBE\x86\oemoobe.msi" /qn /norestart
 cls
 
 ::::::::::::::::::::::::::
@@ -2651,8 +2651,8 @@ start /wait msiexec /x {b145ec69-66f5-11d8-9d75-000129760d75} /qn /norestart /pa
 start /wait msiexec /x {D9428275-602F-4D4B-A921-9CC642B76995} /qn /norestart /passive
 
 :: McAfee LiveSafe - Internet Security
-if exist %ProgramFiles(x86)%\McAfee\MSC\mcuihost.exe %ProgramFiles(x86)%\McAfee\MSC\mcuihost.exe /body:misp://MSCJsRes.dll::uninstall.html /id:uninstall 2>NUL
-if exist %ProgramFiles%\McAfee\MSC\mcuihost.exe %ProgramFiles%\McAfee\MSC\mcuihost.exe /body:misp://MSCJsRes.dll::uninstall.html /id:uninstall 2>NUL
+if exist "%ProgramFiles(x86)%\McAfee\MSC\mcuihost.exe" "%ProgramFiles(x86)%\McAfee\MSC\mcuihost.exe" /body:misp://MSCJsRes.dll::uninstall.html /id:uninstall 2>NUL
+if exist "%ProgramFiles%\McAfee\MSC\mcuihost.exe" "%ProgramFiles%\McAfee\MSC\mcuihost.exe" /body:misp://MSCJsRes.dll::uninstall.html /id:uninstall 2>NUL
 
 :: Media Gallery
 start /wait msiexec /x {115B60D5-BBDB-490E-AF2E-064D37A3CE01} /qn /norestart /passive
