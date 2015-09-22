@@ -84,7 +84,7 @@ echo.
 echo Would you like to download and cleanup temp files once the applications have been uninstalled?
 echo.
 set /P TempCleanup=Remove Temp Files - [Y]/n?
-if /I %TempCleanup% NEQ "N" GOTO SKIPCLEANUP
+if /I %TempCleanup%==n GOTO SKIPCLEANUP
 :: Now we call wget to download TempFileCleanup.bat and then run it at the end.
 wget.exe --no-check-certificate https://raw.githubusercontent.com/gslight/bloatware/master/TempFileCleanup.bat -O TempFileCleanup.bat 2>NUL
 
