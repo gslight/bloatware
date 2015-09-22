@@ -241,3 +241,5 @@ echo  Cleanup complete.
 echo.
 echo.
 ENDLOCAL
+:: Close the screen once finished so we can get the finished popup on the original command window
+exit

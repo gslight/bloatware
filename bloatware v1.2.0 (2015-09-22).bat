@@ -85,7 +85,11 @@ echo Would you like to download and cleanup temp files once the applications hav
 echo.
 set /P TempCleanup=Remove Temp Files - [Y]/n?
 if /I %TempCleanup% NEQ "N" GOTO SKIPCLEANUP
+:: Now we call wget to download TempFileCleanup.bat and then run it at the end.
+wget.exe --no-check-certificate https://raw.githubusercontent.com/gslight/bloatware/master/tempfilecleanup.bat -O tempfilcleanup.bat 2>NUL
 
+:: Wget breaks the title, fixing it here.
+title BLOATWARE v%SCRIPT_VERSION% (%SCRIPT_DATE%)
 
 : SKIPCLEANUP
 :: PREP: Detect the version of Windows we're on. This determines a few things later in the script, such as whether or not to attempt removal of Windows 8/8.1 metro apps
@@ -3378,6 +3382,10 @@ start /wait msiexec /x {E2CAA395-66B3-4772-85E3-6134DBAB244E} /qn /norestart /pa
 "C:\Program Files (x86)\InstallShield Installation Information\{BC12448A-0B41-4E11-B242-B1129512F5B7} /qn /norestart /passive\setup.exe" -l0x9  /remove 2>NUL
 start /wait msiexec /x {BC8233D8-59BA-4D40-92B9-4FDE7452AA8B} /qn /norestart /passive
 start /wait msiexec /x {C2D4CD4A-AE20-40B3-8726-8ED1C03E8C15} /qn /norestart /passive
+
+:: Here we check the status of %TempCleanup% and check to see if we agreed to run the script.
+cls 
+if /i %TempCleanup%==Y echo Running TempFileCleanup now && call TempFileCleanup.bat 
 
 cls
 color CF
