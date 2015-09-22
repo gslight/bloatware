@@ -1,4 +1,4 @@
-:: Name:		bloatware v1.1.2 (2015-09-16).bat
+:: Name:		bloatware v1.2.0 (2015-09-22).bat
 :: Purpose:		Remove all bloatware on new PCs
 :: Author:		George Slight
 :: Revisions:	
@@ -14,8 +14,8 @@
 
 cls
 color 0f
-set SCRIPT_VERSION=1.1.2
-set SCRIPT_DATE=2015-09-17
+set SCRIPT_VERSION=1.2.0
+set SCRIPT_DATE=2015-09-22
 set TARGET_METRO=no
 title BLOATWARE v%SCRIPT_VERSION% (%SCRIPT_DATE%)
 
@@ -77,6 +77,16 @@ cls
 :: Wget breaks the title, fixing it here.
 title BLOATWARE v%SCRIPT_VERSION% (%SCRIPT_DATE%)
 
+:: Here we check if we want to cleanup temp files and download the latest script from github.
+
+echo.
+echo Would you like to download and cleanup temp files once the applications have been uninstalled?
+echo.
+set /P TempCleanup=Remove Temp Files - [Y]/n?
+if /I %TempCleanup% NEQ "N" GOTO SKIPCLEANUP
+
+
+: SKIPCLEANUP
 :: PREP: Detect the version of Windows we're on. This determines a few things later in the script, such as whether or not to attempt removal of Windows 8/8.1 metro apps
 set WIN_VER=undetected
 for /f "tokens=3*" %%i IN ('reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v ProductName ^| Find "ProductName"') DO set WIN_VER=%%i %%j
