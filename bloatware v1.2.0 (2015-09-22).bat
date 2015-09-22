@@ -5,8 +5,9 @@
 :: Jan 2015 - initial version
 :: Mar 2015 - Added more bloatware
 :: Aug 2015 - Added more bloatware, and public release.
-:: Aug 2015 - Added more bloatware, windows 8/10 support for removing metro apps
-:: Aug 2015 - Big update, automatic updates to get the latest version of the script.
+:: Sep 2015 - Added more bloatware, windows 8/10 support for removing metro apps
+:: Sep 2015 - Big update, automatic updates to get the latest version of the script.
+:: Sep 2015 - Another update, now added Temp File Cleanup.
 @echo off
 
 :: "its fucking beautiful works a treat on HP and Dell" -Manoj
