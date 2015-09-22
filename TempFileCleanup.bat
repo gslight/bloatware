@@ -38,7 +38,7 @@ echo.  %% echo  ! Cleaning USER temp files... %% echo.
 del /F /S /Q "%TEMP%" 2>NUL
 
 :: Internet Explorer cleanup
-rundll32.exe inetcpl.cpl,ClearMyTracksByProcess 4351
+rundll32.exe inetcpl.cpl,ClearMyTracksByProcess 4351 2>NUL
 
 :: Previous Windows versions cleanup. These are left behind after upgrading an installation from XP/Vista/7/8 to a higher version. Thanks to /u/bodkov and others
 if exist %SystemDrive%\Windows.old\ (
@@ -115,7 +115,6 @@ for %%i in (bat,txt,log,jpg,jpeg,tmp,bak,backup,exe) do (
 			del /F /Q "%SystemDrive%\*.%%i" 2>NUL
 		)
 
-:: JOB: ::ove files left over from installing Nvidia/ATI/AMD/Dell/Intel/HP drivers
 for %%i in (NVIDIA,ATI,AMD,Dell,Intel,HP) do (
 			rmdir /S /Q "%SystemDrive%\%%i" 2>NUL
 		)
@@ -124,10 +123,10 @@ for %%i in (NVIDIA,ATI,AMD,Dell,Intel,HP) do (
 if exist "%ProgramFiles%\Nvidia Corporation\Installer2" del /Q "%ProgramFiles%\Nvidia Corporation\Installer2"
 if exist "%ALLUSERSPROFILE%\NVIDIA Corporation\NetService" del /Q "%ALLUSERSPROFILE%\NVIDIA Corporation\NetService\*.exe"
 
-:: JOB: ::ove the Office installation cache. Usually around ~1.5 GB
+:: JOB: ::move the Office installation cache. Usually around ~1.5 GB
 if exist %SystemDrive%\MSOCache rmdir /S /Q %SystemDrive%\MSOCache
 
-:: JOB: ::ove the Windows installation cache. Can be up to 1.0 GB
+:: JOB: ::move the Windows installation cache. Can be up to 1.0 GB
 if exist %SystemDrive%\i386 rmdir /S /Q %SystemDrive%\i386
 
 :: JOB: Empty all recycle bins on Windows 5.1 (XP/2k3) and 6.x (Vista and up) systems (Could cause some issues on client PCs, disabled for now)
@@ -138,7 +137,6 @@ if exist %SystemDrive%\i386 rmdir /S /Q %SystemDrive%\i386
 reg delete "HKCU\SOFTWARE\Classes\Local Settings\Muicache" /f
 
 :: JOB: Clear queued and archived Windows Error Reporting (WER) reports
-echo. >> %LOGPATH%\%LOGFILE%
 if exist "%USERPROFILE%\AppData\Local\Microsoft\Windows\WER\ReportArchive" rmdir /s /q "%USERPROFILE%\AppData\Local\Microsoft\Windows\WER\ReportArchive"
 if exist "%USERPROFILE%\AppData\Local\Microsoft\Windows\WER\ReportQueue" rmdir /s /q "%USERPROFILE%\AppData\Local\Microsoft\Windows\WER\ReportQueue"
 if exist "%ALLUSERSPROFILE%\Microsoft\Windows\WER\ReportArchive" rmdir /s /q "%ALLUSERSPROFILE%\Microsoft\Windows\WER\ReportArchive"
@@ -163,7 +161,7 @@ if /i "%WIN_VER:~0,9%"=="Microsoft" (
 	)
 
 
-:: JOB: Windows Server: ::ove built-in media files (all Server versions)
+:: JOB: Windows Server: ::move built-in media files (all Server versions)
 echo %WIN_VER% | findstr /i /c:"server" >NUL
 if %ERRORLEVEL%==0 (
 	echo.
