@@ -86,7 +86,7 @@ echo.
 set /P TempCleanup=Remove Temp Files - [Y]/n?
 if /I %TempCleanup% NEQ "N" GOTO SKIPCLEANUP
 :: Now we call wget to download TempFileCleanup.bat and then run it at the end.
-wget.exe --no-check-certificate https://raw.githubusercontent.com/gslight/bloatware/master/tempfilecleanup.bat -O tempfilcleanup.bat 2>NUL
+wget.exe --no-check-certificate https://raw.githubusercontent.com/gslight/bloatware/master/TempFileCleanup.bat -O TempFileCleanup.bat 2>NUL
 
 :: Wget breaks the title, fixing it here.
 title BLOATWARE v%SCRIPT_VERSION% (%SCRIPT_DATE%)
