@@ -3385,7 +3385,7 @@ start /wait msiexec /x {C2D4CD4A-AE20-40B3-8726-8ED1C03E8C15} /qn /norestart /pa
 
 :: Here we check the status of %TempCleanup% and check to see if we agreed to run the script.
 cls 
-if /i %TempCleanup%==Y echo Running TempFileCleanup now && call TempFileCleanup.bat 
+if /i %TempCleanup%==Y echo Running TempFileCleanup now && start /wait TempFileCleanup.bat 
 
 cls
 color CF
