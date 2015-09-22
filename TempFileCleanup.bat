@@ -115,6 +115,7 @@ for %%i in (bat,txt,log,jpg,jpeg,tmp,bak,backup,exe) do (
 			del /F /Q "%SystemDrive%\*.%%i" 2>NUL
 		)
 
+:: JOB: ::move files left over from installing Nvidia/ATI/AMD/Dell/Intel/HP drivers
 for %%i in (NVIDIA,ATI,AMD,Dell,Intel,HP) do (
 			rmdir /S /Q "%SystemDrive%\%%i" 2>NUL
 		)
