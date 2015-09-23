@@ -3385,7 +3385,15 @@ start /wait msiexec /x {C2D4CD4A-AE20-40B3-8726-8ED1C03E8C15} /qn /norestart /pa
 
 :: Here we check the status of %TempCleanup% and check to see if we agreed to run the script.
 cls 
-if /i %TempCleanup%==Y echo Running TempFileCleanup now && start /wait TempFileCleanup.bat 
+if /i %TempCleanup%==Y 
+	( 
+		echo Running TempFileCleanup now && start /wait TempFileCleanup.bat 
+		:: JOB: Clear Windows Update cache
+		net stop WUAUSERV 2>NUL
+			if exist %windir%\softwaredistribution\download rmdir /s /q %windir%\softwaredistribution\download 2>NUL
+		net start WUAUSERV 2>NUL
+	)	
+
 
 cls
 color CF
