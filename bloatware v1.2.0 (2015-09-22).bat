@@ -524,7 +524,7 @@ start /wait msiexec /x {B0D59FDC-FEAB-49A2-9B5A-E5E0A8F9D7E0} /qn /norestart /pa
 :: Amazon 1Button App 1.0.0.4
 start /wait msiexec /x {134E190A-CE2A-4436-BDEB-387CC36A96C9} /qn /norestart /passive
 
-:: AMD Accelerated Video Transcoding
+:: AMD Accelerated Video Transcoding // Drag-and-Drop Transcoding
 start /wait msiexec /x {A6AFFBD8-D006-967F-51AF-0120F0261080} /qn /norestart /passive
 start /wait msiexec /x {8642397F-CF08-6B30-A477-A039BBAA511E} /qn /norestart /passive
 start /wait msiexec /x {9427FF53-EEF7-6D70-73AE-596A6B0CBC36} /qn /norestart /passive
@@ -535,6 +535,8 @@ start /wait msiexec /x {E7ACB435-E0B4-4770-77DE-ED38887CD133} /qn /norestart /pa
 start /wait msiexec /x {ABD675FF-147C-689A-50B9-6DC57DE4044F} /qn /norestart /passive
 start /wait msiexec /x {3BF3599D-7F28-C60B-1C5D-82BFD4E5EF33} /qn /norestart /passive
 start /wait msiexec /x {D1822C34-F342-B6AA-6369-899C9D2A9227} /qn /norestart /passive
+start /wait msiexec /x {F6BF49D7-479E-23FE-A8A9-63D193D05697} /qn /norestart /passive
+start /wait msiexec /x {8F2415FA-72F2-F029-0450-4EB2FAE484C5} /qn /norestart /passive
 
 :: AMD Catalyst Control Center - Branding
 start /wait msiexec /x {24D38277-CE6E-4E12-A2EE-F46832A4FA2F} /qn /norestart /passive
@@ -563,6 +565,7 @@ start /wait msiexec /x {C16CD4C0-48EE-0F40-C9FD-0778EAF73FBD} /qn /norestart /pa
 start /wait msiexec /x {D7C275A6-3266-0FBC-2D84-17A6AC226F01} /qn /norestart /passive
 start /wait msiexec /x {ED273D26-E354-1A5B-A0D0-CB5258D43BD2} /qn /norestart /passive
 start /wait msiexec /x {1D33EC42-4787-56CD-8137-95D8418FFEE8} /qn /norestart /passive
+start /wait msiexec /x {678F0819-823E-D737-3FD1-13EF6D9AE2EC} /qn /norestart /passive
 
 :: AOLIcon (lol)
 start /wait msiexec /x {FFC7F03B-7069-4F7B-B0A5-9C173E898AC9} /qn /norestart /passive
@@ -1385,7 +1388,28 @@ start /wait msiexec /x {FE59DF1D-F3DC-2B06-DF69-257890B220E3} /qn /norestart /pa
 start /wait msiexec /x {FEFF81BF-B911-6755-FBDE-09547BDFD0A2} /qn /norestart /passive
 start /wait msiexec /x {FF10AC4D-3349-99DA-3E58-5197CEA1D833} /qn /norestart /passive
 start /wait msiexec /x {FFCF34B9-A0B1-2E2B-7D7E-8FAB4A781CC9} /qn /norestart /passive
-
+start /wait msiexec /x {0539BDDF-F755-D9E5-01DD-C849A8FEAFBA} /qn /norestart /passive
+start /wait msiexec /x {7CD296DF-92C6-0AFA-2266-52D2E9E6F94A} /qn /norestart /passive
+start /wait msiexec /x {637C66DF-2C30-92D5-FF70-4C6BF78A70B8} /qn /norestart /passive
+start /wait msiexec /x {8DA5268F-0878-6946-18C5-AC119E909E45} /qn /norestart /passive
+start /wait msiexec /x {5059FE9E-985A-5042-4E40-0599893F1BD4} /qn /norestart /passive
+start /wait msiexec /x {317F1B3D-6D11-845F-78A4-A7043709BE98} /qn /norestart /passive
+start /wait msiexec /x {561F34EC-58FD-012E-97E9-FD602FE05793} /qn /norestart /passive
+start /wait msiexec /x {88ED4B4B-737C-436A-1986-5C11DAE3AF58} /qn /norestart /passive
+start /wait msiexec /x {868A261B-F138-F634-809D-FB055FBD64D7} /qn /norestart /passive
+start /wait msiexec /x {55B3618A-C140-9255-4A2E-DFDA4FA73079} /qn /norestart /passive
+start /wait msiexec /x {80D7F879-2B6B-A962-7CDB-9D44EBF94179} /qn /norestart /passive
+start /wait msiexec /x {7646ABF9-134D-E4D4-6CAB-BDCC6C1B757E} /qn /norestart /passive
+start /wait msiexec /x {9334EE39-4008-DADF-312A-959732D2BA89} /qn /norestart /passive
+start /wait msiexec /x {C3949029-D1B6-7C46-8924-D923632D25C6} /qn /norestart /passive
+start /wait msiexec /x {B5B56A67-A778-EC49-933C-A16ACDDB36AA} /qn /norestart /passive
+start /wait msiexec /x {CB875A37-DCFE-D05D-0D46-56FF566687F3} /qn /norestart /passive
+start /wait msiexec /x {9F405B46-9A78-F808-F993-A7F9F97B31A4} /qn /norestart /passive
+start /wait msiexec /x {7998A135-B567-5CBB-0C0A-D7095D9AD198} /qn /norestart /passive
+start /wait msiexec /x {7D524964-6AB4-2712-5B65-80770A1C080F} /qn /norestart /passive
+start /wait msiexec /x {7CD40554-C923-6261-534B-B81F37519864} /qn /norestart /passive
+start /wait msiexec /x {597AB871-BC7D-29EC-2DB5-F29C32FBD6A3} /qn /norestart /passive
+start /wait msiexec /x {972315D0-3943-6BAB-CCC8-4B6E9F844390} /qn /norestart /passive
 
 :: CITIZEN bloatware (printer)
 start /wait msiexec /x {546D97C7-9DF6-4A2D-BE02-2C0B25FFE1E3} /qn /norestart /passive
@@ -1774,6 +1798,7 @@ start /wait msiexec /x {793B70D2-41E9-46AB-9DDC-B34C99D07DB5} /qn /norestart /pa
 start /wait msiexec /x {F8EB8FFC-C535-49A1-A84D-CC75CB2D6ADA} /qn /norestart /passive
 start /wait msiexec /x {1BDEB6E2-6706-4132-A5D3-99190C6BECD8} /qn /norestart /passive
 start /wait msiexec /x {2DFA9084-CEB3-4A48-B9F7-9038FEF1B8F4} /qn /norestart /passive
+start /wait msiexec /x {4E91898E-4DED-4B17-94F0-FA61AACCDEB0} /qn /norestart /passive
 
 :: EA Download Manager
 start /wait msiexec /x {EF7E931D-DC84-471B-8DB6-A83358095474} /qn /norestart /passive
@@ -1858,9 +1883,6 @@ start /wait msiexec /x {597A58EC-42D6-4940-8739-FB94491B013C} /qn /norestart /pa
 :: GeekBuddy
 start /wait msiexec /x {17004FB0-9CFD-43DC-BB2D-E2BA612D98D0} /qn /norestart /passive
 
-:: GlobalUpdate Helper
-start /wait msiexec /x {A92DAB39-4E2C-4304-9AB6-BC44E68B55E2} /qn /norestart /passive
-
 :: Google Toolbar for Internet Explorer
 start /wait msiexec /x {18455581-E099-4BA8-BC6B-F34B2F06600C} /qn /norestart /passive
 start /wait msiexec /x {2318C2B1-4965-11d4-9B18-009027A5CD4F} /qn /norestart /passive
@@ -1871,7 +1893,6 @@ start /wait msiexec /x {60EC980A-BDA2-4CB6-A427-B07A5498B4CA} /qn /norestart /pa
 start /wait msiexec /x {A92DAB39-4E2C-4304-9AB6-BC44E68B55E2} /qn /norestart /passive
 start /wait msiexec /x {A4DE5CD7-96D6-3979-8C39-E864396AFFC0} /qn /norestart /passive
 start /wait msiexec /x {5BAA8884-F661-464B-B5B2-5C6C632BFC21} /qn /norestart /passive
-start /wait msiexec /x {A92DAB39-4E2C-4304-9AB6-BC44E68B55E2} /qn /norestart /passive
 
 :: Hewlett-Packard ACLM.NET
 start /wait msiexec /x {6F340107-F9AA-47C6-B54C-C3A19F11553F} /qn /norestart /passive
@@ -1990,7 +2011,7 @@ start /wait msiexec /x {8126E380-F9C6-4317-9CEE-9BBDDAB676E5} /qn /norestart /pa
 :: HP D2400_Help
 start /wait msiexec /x {7EF7CCB0-52BF-4947-BE6E-E47D586E8842} /qn /norestart /passive
 
-:: HP Deskjet 2510 series Setup Guide 
+:: HP Deskjet 2510 series Setup Guide
 start /wait msiexec /x {216C7F38-4BBC-4E9A-8392-C9FA21B54386} /qn /norestart /passive
 
 :: HP Deskjet 3050 J610 series Help 140.0.63.63
@@ -2539,6 +2560,7 @@ start /wait msiexec /x {FE0133FE-9AEE-4A36-9F46-749E069540D3} /qn /norestart /pa
 start /wait msiexec /x {4A03706F-666A-4037-7777-5F2748764D10} /qn /norestart /passive
 start /wait msiexec /x {CCB6114E-9DB9-BD54-5AA0-BC5123329C9D} /qn /norestart /passive
 start /wait msiexec /x {32A3A4F4-B792-11D6-A78A-00B0D0170550} /qn /norestart /passive
+start /wait msiexec /x {C270821D-2479-D0F4-1BD1-7BBAF6762A98} /qn /norestart /passive
 
 :: Kaspersky Lab Network Agent
 start /wait msiexec /x {786A9F7E-CFEC-451F-B3C4-22EB11550FD8} /qn /norestart /passive
@@ -2695,6 +2717,9 @@ start /wait msiexec /x {90150000-008C-0000-1000-0000000FF1CE} /qn /norestart /pa
 start /wait msiexec /x {90150000-008C-0409-0000-0000000FF1CE} /qn /norestart /passive
 start /wait msiexec /x {90150000-008F-0000-1000-0000000FF1CE} /qn /norestart /passive
 
+:: Microsoft Office 2003 Web Components
+start /wait msiexec /x {90120000-00A4-0409-0000-0000000FF1CE} /qn /norestart /passive
+
 :: Microsoft Office 2007 "Get Started Tab" for PowerPoint, Excel, and Word
 start /wait msiexec /x {5AE5DB70-5CE6-4876-A83E-8246CC36FC28} /qn /norestart /passive
 start /wait msiexec /x {AB706D91-2242-4E1D-B4D0-1ED35387F5A7} /qn /norestart /passive
@@ -2767,10 +2792,6 @@ start /wait msiexec /x {042A6F10-F770-4886-A502-B795DCF2D3B5} /qn /norestart /pa
 
 :: NVIDIA HD Audio Driver
 start /wait msiexec /x {B2FE1952-0186-46C3-BAEC-A80AA35AC5B8} /qn /norestart /passive
-
-:: Office 2013 C2R Suite
-start /wait msiexec /x {90150000-0138-0409-0000-0000000FF1CE} /qn /norestart /passive
-start /wait msiexec /x "C:\ProgramData\Microsoft\OEMOffice15\OOBE\x86\oemoobe.msi" /qn /norestart
 
 :: opensource
 start /wait msiexec /x {3677D4D8-E5E0-49FC-B86E-06541CF00BBE} /qn /norestart /passive
@@ -3389,7 +3410,6 @@ if exists "C:\Program Files (x86)\Lenovo\Customer Feedback Program\Lenovo.TVT.Cu
 if exists "C:\Program Files (x86)\Lenovo\Customer Feedback Program\Lenovo.TVT.CustomerFeedback.InnovApps.dll" del "C:\Program Files (x86)\Lenovo\Customer Feedback Program\Lenovo.TVT.CustomerFeedback.InnovApps.dll"
 if exists "C:\Program Files (x86)\Lenovo\Customer Feedback Program\Lenovo.TVT.CustomerFeedback.OmnitureSiteCatalyst.dll" del "C:\Program Files (x86)\Lenovo\Customer Feedback Program\Lenovo.TVT.CustomerFeedback.OmnitureSiteCatalyst.dll"
 SchTasks /Delete /TN "Lenovo Customer Feedback Program 64" 2>NUL
-
 
 :: Here we check the status of %TempCleanup% and check to see if we agreed to run the script.
 cls 
