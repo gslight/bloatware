@@ -28,12 +28,12 @@ set REPO_SCRIPT_VERSION=0
 wget.exe --no-check-certificate https://raw.githubusercontent.com/gslight/bloatware/master/sha256sums.txt -O sha256sums.txt 2>NUL
 :: Assuming there was no error, go ahead and extract version number into REPO_SCRIPT_VERSION, and release date into REPO_SCRIPT_DATE
 if /i %ERRORLEVEL%==0 (
-	for /f "tokens=1,2,3 delims= " %%a in (sha256sums.txt) do set WORKING=%%b
-	for /f "tokens=4 delims=,()" %%a in (sha256sums.txt) do set WORKING2=%%a
+		for /f "tokens=1,2,3 delims= " %%a in (sha256sums.txt) do set WORKING=%%b
+		for /f "tokens=4 delims=,()" %%a in (sha256sums.txt) do set WORKING2=%%a
 	)
 if /i %ERRORLEVEL%==0 (
-	set REPO_SCRIPT_VERSION=%WORKING:~1,6%
-	set REPO_SCRIPT_DATE=%WORKING2%
+		set REPO_SCRIPT_VERSION=%WORKING:~1,6%
+		set REPO_SCRIPT_DATE=%WORKING2%
 	)
 
 
@@ -84,14 +84,14 @@ echo.
 echo Would you like to download and cleanup temp files once the applications have been uninstalled?
 echo.
 set /P TempCleanup=Remove Temp Files - [Y]/n?
-if /I %TempCleanup%==n GOTO SKIPCLEANUP
-:: Now we call wget to download TempFileCleanup.bat and then run it at the end.
-wget.exe --no-check-certificate https://raw.githubusercontent.com/gslight/bloatware/master/TempFileCleanup.bat -O TempFileCleanup.bat 2>NUL
+if /I %TempCleanup%==Y (
+		:: Now we call wget to download TempFileCleanup.bat and then run it at the end.
+		wget.exe --no-check-certificate https://raw.githubusercontent.com/gslight/bloatware/master/TempFileCleanup.bat -O TempFileCleanup.bat 2>NUL
+	)
 
 :: Wget breaks the title, fixing it here.
 title BLOATWARE v%SCRIPT_VERSION% (%SCRIPT_DATE%)
 
-: SKIPCLEANUP
 :: PREP: Detect the version of Windows we're on. This determines a few things later in the script, such as whether or not to attempt removal of Windows 8/8.1 metro apps
 set WIN_VER=undetected
 for /f "tokens=3*" %%i IN ('reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v ProductName ^| Find "ProductName"') DO set WIN_VER=%%i %%j
@@ -108,7 +108,6 @@ pushd %~dp0 2>NUL
 echo %CUR_DATE% %TIME%    Launching script...
 echo.
 
-
 :: PREP JOB: Force WMIC location in case the system PATH is messed up
 set WMIC=%SystemRoot%\system32\wbem\wmic.exe
 
@@ -121,18 +120,18 @@ color CF
 echo.
 echo Would you like to remove Office 2013 Click-to-run (OEM) that normally comes with new PCs, this can take up on average around 1-2GB. However if you wish to install Office 2013 (OEM) on their PC at a later date you will have to redownload it from scratch again and depending on their internet speed this may take a while.
 echo.              
-SET /P RemoveOffice=Uninstall Office 2013 C2R [Y]/n?
-IF /I "%RemoveOffice%" NEQ "N" GOTO START
+set /P RemoveOffice=Uninstall Office 2013 C2R [Y]/n?
 echo.
-:: Office 2013 C2R Suite
-start /wait msiexec /x {90150000-0138-0409-0000-0000000FF1CE} /qn /norestart /passive
-start /wait msiexec /x "%ProgramData%\Microsoft\OEMOffice15\OOBE\x86\oemoobe.msi" /qn /norestart
+if /I "%RemoveOffice%"==Y (
+		:: Office 2013 C2R Suite
+		start /wait msiexec /x {90150000-0138-0409-0000-0000000FF1CE} /qn /norestart /passive
+		start /wait msiexec /x "%ProgramData%\Microsoft\OEMOffice15\OOBE\x86\oemoobe.msi" /qn /norestart
+	)
 cls
-
 ::::::::::::::::::::::::::
 :: Interactive Removals ::
 ::::::::::::::::::::::::::
-:START
+
 color 0f
 :: McAfee Internet Security
 "%ProgramFiles%\McAfee\MSC\mcuihost.exe" /body:misp://MSCJsRes.dll::uninstall.html /id:uninstall 2>NUL
@@ -408,24 +407,19 @@ Start /wait MsiExec.exe /X{294A2E0E-3A0B-4D1F-8282-11DEF2040227} /qn /norestart 
 :: System Checkup
 "C:\Program Files\iolo\System Checkup\uninstscu.exe" /uninstall 2>NUL
 
-:PROMPT
 echo.
 echo.
 echo This next part can take up to 30 minutes and may not be silent, would you like to skip it? 
 echo.              
-SET /P SKIP=([Y]/N)?
-IF /I "%SKIP%" NEQ "N" GOTO SKIP
-echo.
-
-:DONT_SKIP
-FOR /F "tokens=*" %%i in (programs_to_target.txt) DO echo. %%i && %WMIC% product where "name like '%%i'" uninstall /nointeractive
+set /P SKIP=([Y]/N)?
+if /I "%SKIP%"==N (
+		FOR /F "tokens=*" %%i in (programs_to_target.txt) DO echo. %%i && %WMIC% product where "name like '%%i'" uninstall /nointeractive
+	)
 
 :::::::::::::::::::::
 :: Silent Removals ::
 :::::::::::::::::::::
-
-:SKIP
-echo.
+cls
 
 :: JOB: Remove default Metro apps (Windows 8/8.1/2012/2012-R2 only).
 :: Read nine characters into the WIN_VER variable (starting at position 0 on the left) to check for Windows 8; 16 characters in to check for Server 2012.
@@ -437,7 +431,7 @@ if "%WIN_VER:~0,18%"=="Windows Server 201" set TARGET_METRO=yes
 if /i %TARGET_METRO%==yes (
 	echo "%CUR_DATE% %TIME%    Windows 8/2012 detected, removing OEM Metro apps..."
 	:: Force allowing us to start AppXSVC service. AppXSVC is the MSI Installer equivalent for "apps" (vs. programs)
-		(
+	(
 		net start AppXSVC
 		:: Enable scripts in PowerShell
 		powershell "Set-ExecutionPolicy Unrestricted -force 2>&1 | Out-Null"
@@ -446,7 +440,7 @@ if /i %TARGET_METRO%==yes (
 		powershell "Get-AppxPackage -AllUsers | Remove-AppxPackage 2>&1 | Out-Null"
 		:: Running DISM cleanup against unused App binaries..."
 		Dism /Online /Cleanup-Image /StartComponentCleanup
-		)
+	)
 )
 
 :: Absolute Notifier // Absolute Reminder
@@ -3441,6 +3435,4 @@ echo.
 echo                     time completed: %CUR_DATE% %TIME%
 
 PAUSE>NUL
-goto :EOF
-:END
 exit /b
