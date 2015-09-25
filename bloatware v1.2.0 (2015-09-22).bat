@@ -54,9 +54,11 @@ if /i %SCRIPT_VERSION% LSS %REPO_SCRIPT_VERSION% (
 		color Cf
 		cls
 		echo.
-		echo %TIME%   Downloading new version, please wait...
+		echo %TIME%   Downloading newer versions, please wait...
 		echo.
 		wget.exe --no-check-certificate -q "https://raw.githubusercontent.com/gslight/bloatware/master/bloatware%%20v%REPO_SCRIPT_VERSION%%%20(%REPO_SCRIPT_DATE%).bat" -O "bloatware v%REPO_SCRIPT_VERSION% (%REPO_SCRIPT_DATE%).bat"
+		:: I put this in here to just redownload this as I change this now and then however there's no version numbers or anything
+		wget.exe --no-check-certificate -q "https://raw.githubusercontent.com/gslight/bloatware/master/programs_to_target.txt" -O "programs_to_target.txt"
 		:: Wget breaks the title, fixing it here.
 		title BLOATWARE %REPO_SCRIPT_VERSION% ^(%REPO_SCRIPT_DATE%^) now downloaded
 		echo.
