@@ -3383,6 +3383,14 @@ start /wait msiexec /x {E2CAA395-66B3-4772-85E3-6134DBAB244E} /qn /norestart /pa
 start /wait msiexec /x {BC8233D8-59BA-4D40-92B9-4FDE7452AA8B} /qn /norestart /passive
 start /wait msiexec /x {C2D4CD4A-AE20-40B3-8726-8ED1C03E8C15} /qn /norestart /passive
 
+:: Lenovo Spyware Removal
+if exists "C:\Program Files (x86)\Lenovo\Customer Feedback Program\Lenovo.TVT.CustomerFeedback.Agent.exe" del "C:\Program Files (x86)\Lenovo\Customer Feedback Program\Lenovo.TVT.CustomerFeedback.Agent.exe"
+if exists "C:\Program Files (x86)\Lenovo\Customer Feedback Program\Lenovo.TVT.CustomerFeedback.Agent.exe.config" del "C:\Program Files (x86)\Lenovo\Customer Feedback Program\Lenovo.TVT.CustomerFeedback.Agent.exe.config"
+if exists "C:\Program Files (x86)\Lenovo\Customer Feedback Program\Lenovo.TVT.CustomerFeedback.InnovApps.dll" del "C:\Program Files (x86)\Lenovo\Customer Feedback Program\Lenovo.TVT.CustomerFeedback.InnovApps.dll"
+if exists "C:\Program Files (x86)\Lenovo\Customer Feedback Program\Lenovo.TVT.CustomerFeedback.OmnitureSiteCatalyst.dll" del "C:\Program Files (x86)\Lenovo\Customer Feedback Program\Lenovo.TVT.CustomerFeedback.OmnitureSiteCatalyst.dll"
+SchTasks /Delete /TN "Lenovo Customer Feedback Program 64" 2>NUL
+
+
 :: Here we check the status of %TempCleanup% and check to see if we agreed to run the script.
 cls 
 if /i %TempCleanup%==Y 
