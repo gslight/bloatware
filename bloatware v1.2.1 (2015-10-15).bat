@@ -1,4 +1,4 @@
-:: Name:		bloatware v1.2.0 (2015-09-22).bat
+:: Name:		bloatware v1.2.1 (2015-10-15).bat
 :: Purpose:		Remove all bloatware on new PCs
 :: Author:		George Slight
 :: Revisions:	
@@ -15,8 +15,8 @@
 
 cls
 color 0f
-set SCRIPT_VERSION=1.2.0
-set SCRIPT_DATE=2015-09-22
+set SCRIPT_VERSION=1.2.1
+set SCRIPT_DATE=2015-10-15
 set TARGET_METRO=no
 title BLOATWARE v%SCRIPT_VERSION% (%SCRIPT_DATE%)
 
@@ -3401,10 +3401,10 @@ start /wait msiexec /x {BC8233D8-59BA-4D40-92B9-4FDE7452AA8B} /qn /norestart /pa
 start /wait msiexec /x {C2D4CD4A-AE20-40B3-8726-8ED1C03E8C15} /qn /norestart /passive
 
 :: Lenovo Spyware Removal
-if exists "C:\Program Files (x86)\Lenovo\Customer Feedback Program\Lenovo.TVT.CustomerFeedback.Agent.exe" del "C:\Program Files (x86)\Lenovo\Customer Feedback Program\Lenovo.TVT.CustomerFeedback.Agent.exe"
-if exists "C:\Program Files (x86)\Lenovo\Customer Feedback Program\Lenovo.TVT.CustomerFeedback.Agent.exe.config" del "C:\Program Files (x86)\Lenovo\Customer Feedback Program\Lenovo.TVT.CustomerFeedback.Agent.exe.config"
-if exists "C:\Program Files (x86)\Lenovo\Customer Feedback Program\Lenovo.TVT.CustomerFeedback.InnovApps.dll" del "C:\Program Files (x86)\Lenovo\Customer Feedback Program\Lenovo.TVT.CustomerFeedback.InnovApps.dll"
-if exists "C:\Program Files (x86)\Lenovo\Customer Feedback Program\Lenovo.TVT.CustomerFeedback.OmnitureSiteCatalyst.dll" del "C:\Program Files (x86)\Lenovo\Customer Feedback Program\Lenovo.TVT.CustomerFeedback.OmnitureSiteCatalyst.dll"
+if exists "C:\Program Files (x86)\Lenovo\Customer Feedback Program\Lenovo.TVT.CustomerFeedback.Agent.exe" del "C:\Program Files (x86)\Lenovo\Customer Feedback Program\Lenovo.TVT.CustomerFeedback.Agent.exe" 2>NUL
+if exists "C:\Program Files (x86)\Lenovo\Customer Feedback Program\Lenovo.TVT.CustomerFeedback.Agent.exe.config" del "C:\Program Files (x86)\Lenovo\Customer Feedback Program\Lenovo.TVT.CustomerFeedback.Agent.exe.config" 2>NUL
+if exists "C:\Program Files (x86)\Lenovo\Customer Feedback Program\Lenovo.TVT.CustomerFeedback.InnovApps.dll" del "C:\Program Files (x86)\Lenovo\Customer Feedback Program\Lenovo.TVT.CustomerFeedback.InnovApps.dll" 2>NUL
+if exists "C:\Program Files (x86)\Lenovo\Customer Feedback Program\Lenovo.TVT.CustomerFeedback.OmnitureSiteCatalyst.dll" del "C:\Program Files (x86)\Lenovo\Customer Feedback Program\Lenovo.TVT.CustomerFeedback.OmnitureSiteCatalyst.dll" 2<NUL
 SchTasks /Delete /TN "Lenovo Customer Feedback Program 64" 2>NUL
 
 :: Here we check the status of %TempCleanup% and check to see if we agreed to run the script.
